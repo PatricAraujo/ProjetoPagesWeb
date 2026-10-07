@@ -4,42 +4,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Css Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Css pagina -->
+    <link rel="stylesheet" href="../style/style.css">
+
     <!-- Icons Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Css pagina -->
-    <link rel="stylesheet" href="./CSS/style.css">
 
     <title> CESAE Digital – Desenvolvimento das Competências Digitais </title>
     <link rel="icon" href="./Image/favicon.ico" sizes="any">
+
 </head>
 
 <body>
 
     <!-- header-start -->
-    <header>
+    <header class="pb-5">
         <!-- Top NAV -->
-        <div>
-            <nav></nav>
-        </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-0" href="">
+                    <img src="../images/CESAE-short.svg" alt="Cesae Digital">
+                </a>
+
+
+                <form class="flex-grow-1 mx-1 mx-lg-3 d-none d-md-flex align-items-center gap-2">
+
+                    <input name="ctl00$ucSiteTopNavMain$txtSearch" type="text" id="ucSiteTopNavMain_txtSearch"
+                        class="form-control rounded-pill border-dark" placeholder="Procurar" aria-label="Procurar"
+                        onkeydown="if (event.key === 'Enter') handleSearch(event)">
+
+                    <button id="ucSiteTopNavMain_btnSearch" class="flex-shrink-0 p-0" type="submit"
+                        onclick="handleSearch(event)" title="Pesquisar">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                </form>
+
+                <a class="nav-link btn rounded-pill btn-primary text-light courses d-lg-none"
+                    href="/fldrSite/pages/coursesList.aspx">Cursos</a>
+                <a href="/fldrSysOps/doLogin.aspx" id="ucSiteTopNavMain_loginIconSmall"
+                    class="nav-link btn rounded-circle bg-white border-dark person mx-0 d-lg-none d-lg-flex justify-content-center align-items-center"
+                    target="_blank">
+                    <i class="fa-regular fa-user"></i></a>
+
+
+
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="flex-grow-1 m-3 position-relative d-md-none">
+
+                    <input name="ctl00$ucSiteTopNavMain$txtSearchSM" type="text" id="ucSiteTopNavMain_txtSearchSM"
+                        class="form-control rounded-pill border-dark" placeholder="Encontre o Curso que procura"
+                        aria-label="Encontre o Curso que procura"
+                        onkeydown="if (event.key === 'Enter') handleSearch(event)">
+
+                    <button id="ucSiteTopNavMain_btnSearchSM" class="bg-none p-0" type="submit"
+                        onclick="handleSearch(event)">
+                        <i class="fa-solid fa-share"></i>
+                    </button>
+                </form>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/fldrSite/pages/projectsList.aspx">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fldrSite/pages/servicesList.aspx">Cursos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/fldrSite/pages/aboutUs.aspx">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/fldrSite/pages/contact.aspx">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link btn rounded-pill btn-primary text-light courses d-none d-lg-inline-block"
+                    href="/fldrSite/pages/coursesList.aspx">Cursos</a>
+                <a href="/fldrSysOps/doLogin.aspx" id="ucSiteTopNavMain_loginIconBig"
+                    class="nav-link btn rounded-circle bg-white border-dark person d-none d-lg-flex justify-content-center align-items-center"
+                    target="_blank"><i class="fa-regular fa-user"></i></a>
+
+
+            </div>
+        </nav>
     </header>
 
     <!-- main start -->
     <main>
+        <!-- Mapa -->
+        <h1>Os nossos Polos
+        </h1>
+        <p class="m-0 p-0 w-100 text-center text-lg-start pb-5">
+            Saiba aqui onde nos pode encontrar e como pode entrar em contacto com qualquer um dos nossos
+            Polos.
+        </p>
+        <div class="spots container-fluid">
+            <div class="destaque row align-items-center justify-content-center g-4 pb-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="ratio ratio-4x3 rounded-4 overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10472.882992031846!2d-9.175654858103108!3d38.70387669440034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935285e58e101%3A0xdf62556e80d20581!2sLACS%20Santos!5e0!3m2!1spt-PT!2spt!4v1791220356060!5m2!1spt-PT!2spt"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            title="Mapa com a localização do CESAE Lisboa"></iframe>Mapa do Polo de Lisboa</iframe>
+                    </div>
+                    <!-- Preferem o link de obter direções por baixo com texto, no texto da morada ou como está atualmente? -->
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
 
+                    <article>
+                        <span class="etiqueta">Novo polo</span>
+
+                        <h3 class="text-truncate">Lisboa</h3>
+                        <h5>Conheça o nosso novo centro de formações.</h5>
+                        <span class="bold"><i class="bi bi-geo-alt"></i> Morada</span>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=/LACS+Santos/@38.7040446,-9.161565,18.25z"
+                            class="gmaps-link d-block pb-4" target="_blank">
+                            Av. 24 de Julho 98
+                            1200-870
+                        </a>
+
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351221234567">221234567</a>*
+                        </p>
+
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:lisboa@cesae.pt">lisboa@cesae.pt</a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Outros centros -->
+        <section class="spots container-fluid pb-5">
+            <div class="container-xl">
+                <div class="row pt-5">
+                    <div
+                        class="col-12 justify-content-center justify-content-lg-start col-lg-7 d-flex flex-wrap align-content-center text-center text-lg-start">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-xl p-inner-content">
+
+                <div class="row pb-4">
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">Porto</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            Rua Ciríaco Cardoso, 186
+                            4150-212 Porto
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351226195200">226 195 200*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:porto@cesae.pt">porto@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=CESAE+Digital,+Rua+Ciríaco+Cardoso,+Porto,+Portugal"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">São João da Madeira</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            SANJOTEC - R. de Fundões 151,
+                            3700-121 São João da Madeira
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351256001923">256 001 923*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"></i><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:sjmadeira@cesae.pt">sjmadeira@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=SANJOTEC,+R.+de+Fundões+151,+3700-121+São+João+da+Madeira"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">Leça da Palmeira</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            Av Dr. António Macedo, Edificio AEP - Formação Profissional 4450-617 Leça da Palmeira
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351229981975">229 981 975*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:lecadapalmeira@cesae.pt">lecadapalmeira@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Av+Dr.+António+Macedo,+Edificio+AEP+-+Formação+Profissional,+4450-617+Leça+da+Palmeira"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                </div>
+                <div class="row pb-4">
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">Marco de Canaveses</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            R. Visconde do Marco 197, 4630-273 Marco de Canaveses
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351255534268">255 534 268*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:marcodecanaveses@cesae.pt">marcodecanaveses@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Visc.+do+Marco+197,+4630-273+Marco+de+Canaveses"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">Vila do Conde</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            Av. Júlio Graça 558, 4480-672 Vila do Conde
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351252638018">252 638 018*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:viladoconde@cesae.pt">viladoconde@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Júlio+Graça+558,+4480-672+Vila+do+Conde"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                    <article class="col-12 col-md-4 pb-4">
+                        <h3 class="text-truncate">Viseu</h3>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-geo-alt"></i>Morada</span><br>
+                            Rua Almirante Afonso Cerqueira, 30 3510-007 Viseu
+
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-telephone-outbound"></i>Telefone</span><br>
+                            <a href="tel:+351232432217">232 432 217</a> /
+                            <a href="tel:+351232432219">232 432 219*</a>
+                        </p>
+                        <p class="pb-3">
+                            <span class="bold"><i class="bi bi-envelope-at"></i>Email</span><br>
+                            <a href="mailto:viseu@cesae.pt">viseu@cesae.pt</a>
+                        </p>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Almirante+Afonso+Cerqueira,+30,+3510-007+Viseu"
+                            class="gmaps-link" target="_blank">Obter direções <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </article>
+                </div>
+
+
+
+                <p class="mt-2"><small>*Chamada para a rede fixa / móvel nacional</small></p>
+            </div>
+        </section>
     </main>
+
+
 
     <!-- footer start -->
     <footer>
 
     </footer>
 
-    <!-- Scripts -->
+    <!-- Titulo e intro -->
+
+    <!-- Info Cesae Lisboa -->
+
+    <!-- Formulario de Contacto -->
+
+
+    <!-- FAQs -->
+
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
-</html>
+</html> 
