@@ -76,44 +76,62 @@
 }
 
 /* Fixar o nav bar ao topo */
-.fixed-top {
+nav {
     /* position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030; */
     background-color: #F4F1FA;
-
+    border-bottom: 1px #E4DFF0 solid;
 }
 
 /* Espaço para nao haver overlap do texto com o nav bar */
 main {
-    padding: 68px;
     display: block;
     unicode-bidi: isolate;
+    padding: 50px;
 }
 
 /* Tipo de letra */
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: 'Quicksand';
     font-weight: 700;
     color: #1A0B3E;
 }
 
+/* espaço entre cada item do navbar */
+.nav-item {
+    padding: 10px;
+}
+
+/* definições do tipo de letra do navbar */
+.navbar a {
+    color: #1A0B3E;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #92127B;
+}
+
 /* cor dos links por default */
-a {
+body a {
     color: #0B7BC0;
 }
 
 /* cor dos links ao passar o rato por cima*/
-a:hover {
+body a:hover {
     color: #92127B;
 }
 
@@ -121,24 +139,28 @@ a:hover {
 .bi-geo-alt {
     color: #E8008A;
     padding: 5px;
+    -webkit-text-stroke: 0.5px currentColor;
 }
 
 /* cor dos icons de telefone */
 .bi-telephone-outbound {
     color: #7850B8;
     padding: 5px;
+    -webkit-text-stroke: 0.5px currentColor;
+
 }
 
 /* cor dos icons de email */
 .bi-envelope-at {
     color: #92127B;
     padding: 5px;
+    -webkit-text-stroke: 0.5px currentColor;
 }
 
 /* background gradiente com cores da marca e texto branco */
 .destaque {
-    border-top-right-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
     background: linear-gradient(120deg, #382068 0%, #92127B 65%, #E8008A 100%);
     color: white;
 }
@@ -148,7 +170,7 @@ a:hover {
 .destaque h2,
 .destaque h3,
 .destaque h4,
-.destaque h5 {
+.destaque h5 .destaque h6 {
     color: white;
 }
 
@@ -168,8 +190,14 @@ a:hover {
 /* cor dos icones dentro do destaque em branco */
 .destaque .bi-geo-alt,
 .destaque .bi-envelope-at,
-.destaque .bi-telephone-outbound {
+.destaque .bi-telephone-outbound, 
+.social-media .bi {
     color: #ffffff;
+}
+
+/* tamanho de todos os icons */
+.bi {
+font-size: 18px;
 }
 
 /* etiqueta tipo "novo polo" na pagina contactos, dentro de destaque */
@@ -189,7 +217,8 @@ a:hover {
     position: absolute;
     top: 50%;
     right: 4px;
-    transform: translateY(-50%); /* Faz que fique dentro da barra de pesquisa*/
+    transform: translateY(-50%);
+    /* Faz que fique dentro da barra de pesquisa*/
     width: 32px;
     height: 32px;
     padding: 0;
@@ -208,15 +237,16 @@ button .bi-search {
     color: white;
 }
 
+/* Usei para as imagens nos contactos */
+.img-zoom {
+    overflow: hidden;
+    /* corta o que passar da caixa */
+}
 
-
-/* VERIFICAR */
-.nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 16px;
-    border-bottom: 1px solid #E4DFF0;
+/* cards tipo cada polo na página Contactos */
+.card {
+    background-color: #F4F1FA;
+    border: none;
 }
 
 .logo {
@@ -224,87 +254,89 @@ button .bi-search {
     height: 36px;
 }
 
-.pesquisa {
-    width: 100%;
-    height: 44px;
-    padding: 0 16px;
-    border: 1.5px solid #E4DFF0;
-    border-radius: 999px;
-    background: #F4F1FA;
-    font-size: 1rem;
-    color: #1A0B3E;
-}
 
-.links {
-    display: flex;
-    gap: 24px;
-}
 
-.links a {
-    color: #1A0B3E;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    color: #92127B;
-}
-
-#barra-de-pesquisa {
+#barra-de-pesquisa,
+#barra-de-pesquisa-sm {
     border: 1px #E4DFF0 solid;
 }
 
-/* Desktop: tudo na mesma linha */
-@media (min-width: 1024px) {
-    .nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px 40px;
-    }
-
-    .pesquisa {
-        width: 400px;
-    }
+.accordion {
+    --bs-accordion-border-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*--- adiciona espaço entre cada linha das FAQs ---*/
 }
 
 
+.accordion-item .accordion-item {
+    border: none;
+border-bottom: 2px solid #E4DFF0;
+border-radius: 0;
+box-shadow: none;
+}
+
+/* Cada item */
+.accordion-item {
+    background: #fff;
+    border: 1px solid #E4DFF0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.accordion-item:has(.accordion-collapse.show) {
+    box-shadow: 0 2px 8px rgba(26, 11, 62, 0.1);
+}
+
+/* Pergunta */
+.accordion-button {
+    padding: 16px 20px;
+    font-weight: 600;
+    color: #1A0B3E;
+    background: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    background: #F4F1FA;
+}
+
+/* Item aberto */
+.accordion-button:not(.collapsed) {
+    color: #92127B;
+    background: #F4F1FA;
+    box-shadow: inset 0 -1px 0 #E4DFF0;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px #0aa7eb1a;
+}
+
+/* Resposta */
+.accordion-body {
+    padding: 16px 20px 20px;
+    color: #1A0B3E;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #1A0B3E;
+        color: #FFF;
+        font-size: 12px;
+}
 
 
-
-
-
-
+/* Desktop: tudo na mesma linha */
 @media (min-width: 1024px) {
-    .nav {
-        display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 420px 1fr;
-        align-items: center;
-        gap: 24px;
-        padding: 16px 40px;
-        background-color: #F4F1FA;
 
-    }
-
-    .nav>a {
-        justify-self: start;
-    }
-
-    .links {
-        justify-content: flex-end;
-    }
-
-    .links a {
-        padding: 8px 4px;
-        border-bottom: 2px solid transparent;
-    }
-
-    .links a:hover {
-        border-bottom-color: #E8008A;
-    }
-
-    .logo {
-        height: 100%;
+    /* formato do destaque em ecrãs grandes */
+    .destaque {
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        background: linear-gradient(120deg, #382068 0%, #92127B 65%, #E8008A 100%);
+        color: white;
     }
 }
