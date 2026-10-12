@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS Bootstrap 5.3.3 (Estável para manter os cartões e grelha funcionais) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Icons Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS pagina -->
     <link rel="stylesheet" href="../CSS/style.css">
 
@@ -21,36 +23,50 @@
     <!-- header-start -->
     <header>
         <!-- Top NAV -->
-        <!-- navbar pra ficar aberto em ecra grande e fixado no topo -->
-        <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
-            <div class="container">
-                <!-- Logo -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid justify-content-between">
                 <a class="navbar-brand me-0" href="../index.html">
-                    <img src="../Image/cesae-digital-logo.svg" alt="CESAE Digital" height="40">
+                    <img src="../Image/cesae-short.svg" alt="logo-CESAE">
                 </a>
-
-                <!-- Botão para menu mobile usando o ID para trocar-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                    <i class="bi bi-list"></i>
                 </button>
+                <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav"
+                    aria-labelledby="navbarNavLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
+                    </div>
+                    <div class="drawer-body w-100 d-flex flex-column flex-lg-row align-items-lg-center">
 
-                <!-- Links alinhados à direita -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="../index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="../Pages/Parceiros.html">Parceiros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="../Pages/Contactos.html">Contactos</a>
-                        </li>
-                        <li class="nav-item ms-lg-2">
-                            <a class="btn btn-primary rounded-pill px-4" href="../Pages/CursosModulos.html">Cursos</a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="CursosModulos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Parceiros.html">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contactos.html">Contactos</a>
+                            </li>
+                        </ul>
+                        <!-- Formulário limpo, sem style inline -->
+                        <form
+                            class="position-relative d-flex align-items-center mt-3 mt-lg-0 w-100 w-lg-auto search-form-custom"
+                            role="search" action="CursosModulos.html" method="get">
+                            <input class="form-control rounded-pill text-truncate pe-5 w-100 search-input-custom"
+                                type="search" name="q" placeholder="Encontra o Curso que procuras"
+                                aria-label="Pesquisar cursos">
+                            <button class="btn-search" type="submit" aria-label="Pesquisar">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </dialog>
             </div>
         </nav>
     </header>
@@ -59,7 +75,7 @@
     <main class="container my-5">
 
         <section>
-            <!-- CURSOS GRID (Uma única row para gerir todos os cartões) -->
+            <!-- CURSOS GRID (Grelha restaurada com sucesso) -->
             <div class="row row-cols-1 row-cols-md-3 g-4">
 
                 <!-- CURSO 1 -->
@@ -79,7 +95,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +119,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +143,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -150,7 +166,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -173,7 +189,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -196,7 +212,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -219,7 +235,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -242,7 +258,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -266,7 +282,7 @@
                                 <span class="badge bg-success">Inscrições Abertas</span>
                                 <br>
                                 <a href="../Pages/Inscricao.html"
-                                    class="btn btn-primary rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
                             </div>
                         </div>
                     </div>
@@ -278,14 +294,65 @@
     </main>
 
     <!-- footer start -->
-    <footer>
+    <footer class="row py-2 m-0 border-top justify-content-between align-items-center footer-custom">
+        <!-- copy right -->
+        <div class="col-12 col-md-4 text-start small">
+            <p class="mb-0">Copyright©2025 CESAE. Todos os direitos reservados</p>
+        </div>
 
+        <!-- logo -->
+        <div class="col-12 col-md-4 text-center my-2 my-md-0">
+            <img src="../Image/cesae-long-white.svg" alt="CESAE Digital Logo" class="footer-logo">
+        </div>
+
+        <!-- social media -->
+        <div class="col-12 col-md-4 d-flex justify-content-end social-media-container">
+            <ul class="social-media list-unstyled d-flex gap-4 p-0 mb-0">
+                <li><a href="https://www.instagram.com/cesae.digital/" target="_blank" title="Instagram"><i
+                            class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/CesaeDigital" target="_blank" title="Facebook"><i
+                            class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/@cesaedigital" target="_blank" title="Youtube"><i
+                            class="bi bi-youtube"></i></a></li>
+                <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank" title="Linkedin"><i
+                            class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Script de drawer para dispositivos móveis -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const drawerToggle = document.querySelector('[data-bs-toggle="drawer"]');
+            const drawerDismiss = document.querySelector('[data-bs-dismiss="drawer"]');
+            const drawer = document.querySelector('#navbarNav');
+
+            if (drawerToggle && drawer) {
+                drawerToggle.addEventListener('click', function () {
+                    if (typeof drawer.showModal === 'function') {
+                        drawer.showModal();
+                    } else {
+                        drawer.setAttribute('open', '');
+                    }
+                });
+            }
+
+            if (drawerDismiss && drawer) {
+                drawerDismiss.addEventListener('click', function () {
+                    if (typeof drawer.close === 'function') {
+                        drawer.close();
+                    } else {
+                        drawer.removeAttribute('open');
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
