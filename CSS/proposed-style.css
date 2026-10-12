@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* montserrat-regular - latin_latin-ext */
 @font-face {
     font-display: swap;
@@ -126,7 +125,7 @@ body a:hover {
 }
 
 .otros-polos {
-    background-color:#E4DFF0;
+    background-color: #E4DFF0;
 }
 
 /* cor dos icons de morada */
@@ -247,7 +246,7 @@ body a:hover {
     flex: 0 0 32px;
     height: 32px;
     border-radius: 40%;
-    background:#F4F1FA;
+    background: #F4F1FA;
     /* color: #92127B; */
     display: flex;
     align-items: center;
@@ -469,293 +468,294 @@ footer {
         border: 1px #E4DFF0 solid;
         border-radius: 50%;
     }
-=======
-/* montserrat-regular - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../style/fonts/montserrat-v31-latin_latin-ext-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
 
-/* montserrat-500 - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../style/fonts/montserrat-v31-latin_latin-ext-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* montserrat-regular - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../style/fonts/montserrat-v31-latin_latin-ext-regular.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-/* montserrat-600 - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../style/fonts/montserrat-v31-latin_latin-ext-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* montserrat-500 - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        src: url('../style/fonts/montserrat-v31-latin_latin-ext-500.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-/* montserrat-700 - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../style/fonts/montserrat-v31-latin_latin-ext-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* montserrat-600 - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        src: url('../style/fonts/montserrat-v31-latin_latin-ext-600.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-/* quicksand-regular - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../style/fonts/quicksand-v37-latin_latin-ext-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* montserrat-700 - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        src: url('../style/fonts/montserrat-v31-latin_latin-ext-700.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-/* quicksand-600 - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../style/fonts/quicksand-v37-latin_latin-ext-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* quicksand-regular - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../style/fonts/quicksand-v37-latin_latin-ext-regular.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-/* quicksand-700 - latin_latin-ext */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../style/fonts/quicksand-v37-latin_latin-ext-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    /* quicksand-600 - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        src: url('../style/fonts/quicksand-v37-latin_latin-ext-600.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-            background-color: #F4F1FA;
+    /* quicksand-700 - latin_latin-ext */
+    @font-face {
+        font-display: swap;
+        /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        src: url('../style/fonts/quicksand-v37-latin_latin-ext-700.woff2') format('woff2');
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
 
-}
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: #F4F1FA;
 
-main {
-    padding: 68px;
-    display: block;
-    unicode-bidi: isolate;
-}
+    }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+    main {
+        padding: 68px;
+        display: block;
+        unicode-bidi: isolate;
+    }
 
-a {
-    color: #0B7BC0;
-}
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
 
-a:hover {
-    color: #92127B;
-}
+    a {
+        color: #0B7BC0;
+    }
 
-.bi-geo-alt {
-    color: #E8008A;
-    padding: 5px;
-}
+    a:hover {
+        color: #92127B;
+    }
 
-.bi-telephone-outbound {
-    color: #7850B8;
-    padding: 5px;
-}
+    .bi-geo-alt {
+        color: #E8008A;
+        padding: 5px;
+    }
 
-.bi-envelope-at {
-    color: #92127B;
-    padding: 5px;
-}
+    .bi-telephone-outbound {
+        color: #7850B8;
+        padding: 5px;
+    }
 
-.destaque {
-    background: linear-gradient(120deg, #382068 0%, #92127B 65%, #E8008A 100%);
-    color: white;
-}
+    .bi-envelope-at {
+        color: #92127B;
+        padding: 5px;
+    }
 
-.destaque h1,
-.destaque h2,
-.destaque h3,
-.destaque h4,
-.destaque h5 {
-    color: white;
-}
+    .destaque {
+        background: linear-gradient(120deg, #382068 0%, #92127B 65%, #E8008A 100%);
+        color: white;
+    }
 
-.destaque a {
-    color: white;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
+    .destaque h1,
+    .destaque h2,
+    .destaque h3,
+    .destaque h4,
+    .destaque h5 {
+        color: white;
+    }
 
-.destaque a:hover {
-    color: #F4F1FA;
-    text-decoration-thickness: 2px;
-}
+    .destaque a {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
 
-.destaque a:focus-visible {
-    outline: 2px solid white;
-    outline-offset: 3px;
-}
+    .destaque a:hover {
+        color: #F4F1FA;
+        text-decoration-thickness: 2px;
+    }
 
-.destaque .bi-geo-alt,
-.destaque .bi-envelope-at,
-.destaque .bi-telephone-outbound {
-    color: #ffffff;
-}
+    .destaque a:focus-visible {
+        outline: 2px solid white;
+        outline-offset: 3px;
+    }
 
-.etiqueta {
-    display: inline-block;
-    background: #fff;
-    color: #1A0B3E;
-    font-size: 0.875rem;
-    font-weight: 500;
-    padding: 4px 14px;
-    border-radius: 999px;
-    margin-bottom: 12px;
-}
+    .destaque .bi-geo-alt,
+    .destaque .bi-envelope-at,
+    .destaque .bi-telephone-outbound {
+        color: #ffffff;
+    }
 
-#ucSiteTopNavMain_btnSearch {
-    width: 44px;
-  height: 44px;
-display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    .etiqueta {
+        display: inline-block;
+        background: #fff;
+        color: #1A0B3E;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 4px 14px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+    }
 
-background-color: #E8008A;
-border-radius: 50%;
-border: 0px;
-cursor: pointer;
-
-}
-.navbar .bi-search {
-    color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Quicksand';
-    font-weight: 700;
-    color: #1A0B3E;
-}
-
-/* VERIFICAR */
-.nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 16px;
-    background: #fff;
-    border-bottom: 1px solid #E4DFF0;
-}
-
-.logo {
-    display: block;
-    height: 36px;
-}
-
-.pesquisa {
-    width: 100%;
-    height: 44px;
-    padding: 0 16px;
-    border: 1.5px solid #E4DFF0;
-    border-radius: 999px;
-    background: #F4F1FA;
-    font-size: 1rem;
-    color: #1A0B3E;
-}
-
-.links {
-    display: flex;
-    gap: 24px;
-}
-
-.links a {
-    color: #1A0B3E;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    color: #92127B;
-}
-
-/* Desktop: tudo na mesma linha */
-@media (min-width: 1024px) {
-    .nav {
-        flex-direction: row;
+    #ucSiteTopNavMain_btnSearch {
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 16px 40px;
+        justify-content: center;
+
+        background-color: #E8008A;
+        border-radius: 50%;
+        border: 0px;
+        cursor: pointer;
+
     }
 
-    .pesquisa {
-        width: 400px;
+    .navbar .bi-search {
+        color: white;
     }
-}
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Quicksand';
+        font-weight: 700;
+        color: #1A0B3E;
+    }
 
-
-
-
-
-
-
-@media (min-width: 1024px) {
+    /* VERIFICAR */
     .nav {
         display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 420px 1fr;
-        align-items: center;
-        gap: 24px;
-        padding: 16px 40px;
-                background-color: #F4F1FA;
-
-    }
-
-    .nav>a {
-        justify-self: start;
-    }
-
-    .links {
-        justify-content: flex-end;
-    }
-
-    .links a {
-        padding: 8px 4px;
-        border-bottom: 2px solid transparent;
-    }
-
-    .links a:hover {
-        border-bottom-color: #E8008A;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+        background: #fff;
+        border-bottom: 1px solid #E4DFF0;
     }
 
     .logo {
-        height: 100%;
+        display: block;
+        height: 36px;
     }
->>>>>>> ef4e064f439b7d7d982ddceef42a3440e69a9ec5
+
+    .pesquisa {
+        width: 100%;
+        height: 44px;
+        padding: 0 16px;
+        border: 1.5px solid #E4DFF0;
+        border-radius: 999px;
+        background: #F4F1FA;
+        font-size: 1rem;
+        color: #1A0B3E;
+    }
+
+    .links {
+        display: flex;
+        gap: 24px;
+    }
+
+    .links a {
+        color: #1A0B3E;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        color: #92127B;
+    }
+
+    /* Desktop: tudo na mesma linha */
+    @media (min-width: 1024px) {
+        .nav {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 40px;
+        }
+
+        .pesquisa {
+            width: 400px;
+        }
+    }
+
+
+
+
+
+
+
+
+    @media (min-width: 1024px) {
+        .nav {
+            display: flex;
+            flex-direction: row;
+            grid-template-columns: 1fr 420px 1fr;
+            align-items: center;
+            gap: 24px;
+            padding: 16px 40px;
+            background-color: #F4F1FA;
+
+        }
+
+        .nav>a {
+            justify-self: start;
+        }
+
+        .links {
+            justify-content: flex-end;
+        }
+
+        .links a {
+            padding: 8px 4px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .links a:hover {
+            border-bottom-color: #E8008A;
+        }
+
+        .logo {
+            height: 100%;
+        }
+    }
 }
