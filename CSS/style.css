@@ -1,0 +1,187 @@
+/* ==========================================================================
+   1. ESTILIZAÇÃO GLOBAL DA NAVBAR E PESQUISA
+   ========================================================================== */
+
+/* Cor de fundo e linha inferior da barra de navegação */
+nav.navbar {
+    background-color: #F4F1FA !important;
+    border-bottom: 1px solid #E4DFF0 !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.navbar .container-fluid {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Comando exato para prender a navbar no topo ao fazer scroll (Sticky) */
+/* --- Fixação Absoluta da Navbar no Topo --- */
+header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1030 !important;
+}
+
+/* Compensa o espaço para o conteúdo principal não ficar por baixo da navbar fixa */
+main.container {
+    margin-top: 90px !important;
+}
+
+body, html {
+    overflow-x: visible !important;
+}
+
+/* Tipografia exata dos links da Navbar */
+.navbar .navbar-nav .nav-link {
+    color: #1A0B3E !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+    color: #92127B !important;
+}
+
+/* Botão de pesquisa cor-de-rosa alinhado dentro do input */
+.btn-search {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8008A !important;
+    color: #fff !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.btn-search .bi-search {
+    color: #ffffff !important;
+}
+
+/* Ajuste do campo de texto para o ícone não sobrepor o texto */
+.search-input-custom {
+    padding-right: 3rem !important;
+}
+
+
+/* ==========================================================================
+   2. ADAPTAÇÃO DESKTOP (Menu Horizontal e Alinhamentos)
+   ========================================================================== */
+@media (min-width: 992px) {
+    .navbar dialog.drawer {
+        display: flex !important;
+        position: static !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        transform: none !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        border: none !important;
+        padding: 0 !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .navbar .drawer-header {
+        display: none !important;
+    }
+
+    .navbar .drawer-body {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 0 !important;
+        overflow: visible !important;
+        width: 100% !important;
+    }
+
+    .navbar-nav {
+        flex-direction: row !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    .navbar-nav .nav-item {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .search-form-custom {
+        max-width: 420px !important;
+        width: 100% !important;
+        margin-left: auto !important;
+    }
+}
+
+
+/* ==========================================================================
+   3. RODAPÉ COMPACTO E ALINHADO
+   ========================================================================== */
+.footer-custom {
+    background-color: #1A0B3E !important;
+    color: #FFFFFF !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.footer-logo {
+    height: 32px !important;
+    width: auto !important;
+}
+
+.footer-custom .small {
+    color: #B8B2CB !important;
+    font-size: 0.85rem;
+}
+
+.footer-custom .social-media a {
+    color: #FFFFFF !important;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.footer-custom .social-media a:hover {
+    color: #E8008A !important;
+}
+/* --- Botão Institucional (Cor roxa exata) --- */
+.btn-institutional {
+    background-color: #1A0B3E !important;
+    border-color: #1A0B3E !important;
+    color: #FFFFFF !important;
+}
+
+.btn-institutional:hover,
+.btn-institutional:focus {
+    background-color: #2D1563 !important;
+    border-color: #2D1563 !important;
+    color: #FFFFFF !important;
+}
+/* --- Tipografia Global Montserrat para a secção de Cursos e Cartões --- */
+main.container, 
+main.container .card-title, 
+main.container .card-text, 
+main.container .badge {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Garante peso e destaque corretos nos títulos dos cursos */
+main.container .card-title {
+    font-weight: 700 !important;
+    color: #1A0B3E !important;
+}
