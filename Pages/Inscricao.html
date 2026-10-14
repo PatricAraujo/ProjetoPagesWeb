@@ -23,36 +23,42 @@
         <!-- Top NAV -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid justify-content-between">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand me-0" href="../index.html">
                     <img src="../Image/cesae-short.svg" alt="logo-CESAE">
                 </a>
-                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+
+                <!-- Botão que dispara o Offcanvas nativo do Bootstrap -->
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
                     <i class="bi bi-list"></i>
                 </button>
-                <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav"
+
+                <!-- Componente Offcanvas nativo do Bootstrap (abre pela direita com .offcanvas-end) -->
+                <div class="offcanvas offcanvas-end flex-grow-1" tabindex="-1" id="navbarNav"
                     aria-labelledby="navbarNavLabel">
-                    <div class="drawer-header">
-                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Fechar"></button>
                     </div>
-                    <div class="drawer-body w-100 d-flex flex-column flex-lg-row align-items-lg-center">
+                    <div class="offcanvas-body w-100 d-flex flex-column flex-lg-row align-items-lg-center">
 
                         <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="CursosModulos.html">Cursos</a>
+                                <a class="nav-link" href="../index.html">Início</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
+                                <a class="nav-link" aria-current="page" href="CursosModulos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Parceiros.html">Parceiros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Contactos.html">Contactos</a>
                             </li>
                         </ul>
-                        <!-- Formulário limpo, sem style inline -->
+
+                        <!-- Formulário de pesquisa -->
                         <form
                             class="position-relative d-flex align-items-center mt-3 mt-lg-0 w-100 w-lg-auto search-form-custom"
                             role="search" action="CursosModulos.html" method="get">
@@ -64,7 +70,7 @@
                             </button>
                         </form>
                     </div>
-                </dialog>
+                </div>
             </div>
         </nav>
     </header>
@@ -136,7 +142,7 @@
     <footer class="row py-2 m-0 border-top justify-content-between align-items-center footer-custom">
         <!-- copy right -->
         <div class="col-12 col-md-4 text-start small">
-            <p class="mb-0">Copyright©2025 CESAE. Todos os direitos reservados</p>
+            <p class="mb-0">Copyright©2026 CESAE. Todos os direitos reservados</p>
         </div>
 
         <!-- logo -->
