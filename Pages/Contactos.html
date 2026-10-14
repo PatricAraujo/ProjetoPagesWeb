@@ -10,580 +10,424 @@
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
     <!-- Css pagina -->
-    <link rel="stylesheet" href="../css/proposed-style.css">
+    <link rel="stylesheet" href="../CSS/proposed-style.css">
 
     <!-- Icons Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <title> CESAE Digital – Desenvolvimento das Competências Digitais </title>
-    <link rel="icon" href="./Image/favicon.ico" sizes="any">
+    <link rel="icon" href="../Image/favicon.ico" sizes="any">
 
 </head>
 
-<nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
-    <div class="container-fluid justify-content-between">
-        <a class="navbar-brand" href="../index.html">
-            <img src="/Image/cesae-short.svg" alt="logo-CESAE">
-        </a>
-        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
-            <i class="bi bi-list"></i>
-        </button>
-        <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-            <div class="drawer-header">
-                <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
-            </div>
-            <div class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center">
-
-                <ul class="navbar-nav lg:mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="CursosModulos.html">Cursos</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contactos.html">Contactos</a>
-                    </li>
-                </ul>
-                <form class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
-                    style="max-width: 600px;" role="search" action="CursosModulos.html" method="get">
-                    <input class="form-control text-truncate pe-5" type="search" name="q"
-                        placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
-                    <button class="btn-search" type="submit" aria-label="Pesquisar">
-                        <i class="bi bi-search" aria-hidden="true"></i>
-                    </button>
-                </form>
-            </div>
-        </dialog>
-    </div>
-</nav>
-
-<main class="flex-grow-1 d-block">
-    <!-- Polos -->
-    <div class="p-5 m-5">
-        <h2>Os nossos Polos</h2>
-        <p class="m-0 p-0 w-100 text-lg-start pb-3">
-            Saiba aqui onde nos pode encontrar e como pode entrar em contacto com qualquer um dos nossos
-            Polos.
-        </p>
-    </div>
-    <!-- Polo de Lisboa -->
-    <div class="container-fluid">
-        <div class="destaque px-5 mx-5 lg:py-5 py-3">
-            <div class="row align-items-center justify-content-center g-9">
-                <div class="col-10 lg:col-5 py-2 d-none md:d-block">
-                    <iframe class="w-100 rounded-5" style="min-height: 320px"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10472.882992031846!2d-9.175654858103108!3d38.70387669440034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935285e58e101%3A0xdf62556e80d20581!2sLACS%20Santos!5e0!3m2!1spt-PT!2spt!4v1791220356060!5m2!1spt-PT!2spt"
-                        allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
-                        title="Mapa com a localização do CESAE Lisboa">
-                    </iframe>
+<body>
+    <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Image/cesae-short.svg" alt="logo-CESAE">
+            </a>
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
                 </div>
-                <div class="col-10 lg:col-3 py-3">
-                    <article>
-                        <span class="badge bg-secondary fg-accent fs-md mb-3">Novo polo</span>
-                        <h4>Lisboa</h4>
-                        <p class="lisboa-descricao">Conheça o nosso novo centro de formações.</p>
+                <div class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center">
 
-                        <div class="polos-dados">
-                            <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                            <div>
-                                <p class="small-print">Morada</p>
-                                <p class="polo-info">Av. 24 de Julho 98, 1200-870 Lisboa</p>
-                            </div>
-                        </div>
-                        <div class="polos-dados">
-                            <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                            <div>
-                                <p class="small-print">Telefone</p>
-                                <p class="polo-info"><a href="tel:+351221234567">221 234 567</a> *</p>
-                            </div>
-                        </div>
-                        <div class="polos-dados">
-                            <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                            <div>
-                                <p class="small-print">Email</p>
-                                <p class="polo-info"><a href="mailto:lisboa@cesae.pt">lisboa@cesae.pt</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <a class="btn-destaque mt-3" target="_blank" rel="noopener"
-                            aria-label="Obter direções para o CESAE Lisboa"
-                            href="https://www.google.com/maps/dir/?api=1&amp;destination=LACS+Santos,+Av.+24+de+Julho+98,+1200-870+Lisboa">
-                            Obter direções <i class="bi bi-map"></i>
-                        </a>
-                    </article>
+                    <ul class="navbar-nav lg:mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CursosModulos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contactos.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <form class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
+                        style="max-width: 600px;" role="search" action="CursosModulos.html" method="get">
+                        <input class="form-control text-truncate pe-5" type="search" name="q"
+                            placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
+                        <button class="btn-search" type="submit" aria-label="Pesquisar">
+                            <i class="bi bi-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
-            </div>
+            </dialog>
         </div>
-    </div>
+    </nav>
 
-    <!-- Outros centros -->
-    <section class="container-fluid my-5 py-4 px-0">
-        <div class="row py-2">
-        </div>
-        <div class="container-fluid w-100 otros-polos px-12">
-            <div class="row py-4 d-flex justify-content-center text-break">
-                <!-- Polo Porto -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>Porto</h4>
-                            <div class="polos-div"></div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">Rua Ciríaco Cardoso 186, 4150-212 Porto</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info"><a href="tel:+351226195200">226 195 200</a> *</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a href="mailto:porto@cesae.pt">porto@cesae.pt</a></p>
-                                </div>
-                            </div>
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE Porto"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=CESAE+Digital,+Rua+Ciríaco+Cardoso,+Porto,+Portugal">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Polo São João da Madeira -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>São João da Madeira</h4>
-                            <div class="polos-div"></div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">SANJOTEC - R. de Fundões 151, 3700-121 São João da
-                                        Madeira
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info"><a href="tel:+351256001923">256 001 923</a> *</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a href="mailto:sjmadeira@cesae.pt">sjmadeira@cesae.pt</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE São João da Madeira"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=SANJOTEC,+R.+de+Fundões+151,+3700-121+São+João+da+Madeira">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Polo Leça da Palmeira -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4 ">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>Leça da Palmeira</h4>
-                            <div class="polos-div"></div>
-
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">Av Dr. António Macedo, Edificio AEP - Formação
-                                        Profissional, 4450-617 Leça da Palmeira</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info"><a href="tel:+351229981975">229 981 975</a> *</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a
-                                            href="mailto:lecadapalmeira@cesae.pt">lecadapalmeira@cesae.pt</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE Leça da Palmeira"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Av+Dr.+António+Macedo,+Edificio+AEP+-+Formação+Profissional,+4450-617+Leça+da+Palmeira">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Polo Marco de Canaveses -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>Marco de Canaveses</h4>
-                            <div class="polos-div"></div>
-
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">R. Visconde do Marco 197, 4630-273 Marco de Canaveses
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info"><a href="tel:+351255534268">255 534 268</a> *</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a
-                                            href="mailto:marcodecanaveses@cesae.pt">marcodecanaveses@cesae.pt</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE Marco de Canaveses"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Visc.+do+Marco+197,+4630-273+Marco+de+Canaveses">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Polo Vila do Conde -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>Vila do Conde</h4>
-                            <div class="polos-div"></div>
-
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">Av. Júlio Graça 558, 4480-672 Vila do Conde</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info"><a href="tel:+351252638018">252 638 018</a> *</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a href="mailto:viladoconde@cesae.pt">viladoconde@cesae.pt</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE Vila do Conde"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Júlio+Graça+558,+4480-672+Vila+do+Conde">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Polo Viseu -->
-                <div class="lg:col-4 md:col-6 sm:col-10 pb-4">
-                    <article class="card polos h-100">
-                        <div class="card-body">
-                            <h4>Viseu</h4>
-                            <div class="polos-div"></div>
-
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
-                                <div>
-                                    <p class="small-print">Morada</p>
-                                    <p class="polo-info">Rua Almirante Afonso Cerqueira, 30, 3510-007 Viseu</p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-telephone-outbound"></i></span>
-                                <div>
-                                    <p class="small-print">Telefone</p>
-                                    <p class="polo-info">
-                                        <a href="tel:+351232432217">232 432 217</a> /
-                                        <a href="tel:+351232432219">232 432 219</a> *
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="polos-dados">
-                                <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
-                                <div>
-                                    <p class="small-print">Email</p>
-                                    <p class="polo-info"><a href="mailto:viseu@cesae.pt">viseu@cesae.pt</a></p>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <a class="btn-card" target="_blank" rel="noopener"
-                                    aria-label="Obter direções para o CESAE Viseu"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Almirante+Afonso+Cerqueira,+30,+3510-007+Viseu">
-                                    Obter direções <i class="bi bi-map"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <p><small class="small-print">*Chamada para a rede fixa / móvel nacional</small></p>
+    <main>
+        <!-- Polos -->
+        <section>
+            <div class="mx-9 my-5">
+                <h2>Os nossos Polos</h2>
+                <p>
+                    Saiba aqui onde nos pode encontrar e como pode entrar em contacto com qualquer um dos nossos
+                    Polos.
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Polo de Lisboa -->
+        <section>
+            <div class="container-fluid">
+                <div class="destaque mx-9 lg:py-1 my-3">
+                    <div class="row align-items-center justify-content-center g-9">
+                        <div class="col-10 lg:col-5 py-2 d-none md:d-block">
+                            <iframe class="w-100 rounded-5" style="min-height: 320px"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10472.882992031846!2d-9.175654858103108!3d38.70387669440034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935285e58e101%3A0xdf62556e80d20581!2sLACS%20Santos!5e0!3m2!1spt-PT!2spt!4v1791220356060!5m2!1spt-PT!2spt"
+                                allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                                title="Mapa com a localização do CESAE Lisboa">
+                            </iframe>
+                        </div>
+                        <div class="col-10 lg:col-3 py-3">
+                            <article>
+                                <span class="badge bg-secondary fg-accent fs-md mb-3">Novo polo</span>
+                                <h4>Lisboa</h4>
+                                <p class="lisboa-descricao">Conheça o nosso novo centro de formações.</p>
 
-    <!-- Contactanos -->
-    <section class="mx-5 px-5">
-        <h2> Perguntas Frequentes</h2>
-        <div class="accordion">
-            <!-- cat 1 -->
-            <details class="accordion-item" name="accordionExample">
-                <summary class="accordion-header">
-                    Geral
-                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m2 5 6 6 6-6"></path>
-                    </svg>
-                </summary>
-                <div class="accordion-body">
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Como posso saber a data de início, o local e o horário dos cursos?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Esta informação encontra-se disponível na página do respetivo curso,
-                            no início da
-                            página, logo abaixo da imagem enquadradora.
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Em que idioma são lecionados os cursos?
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">Av. 24 de Julho 98, 1200-870 Lisboa</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351221234567">221 234 567</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a href="mailto:lisboa@cesae.pt">lisboa@cesae.pt</a>
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Com exceção dos cursos de Português Língua de Acolhimento,
-                            direcionados a pessoas
-                            que
-                            pretendem aprender Português, todos os cursos são lecionados em
-                            língua portuguesa.
-                            Assim, recomenda-se que os participantes tenham um nível avançado de
-                            compreensão e
-                            comunicação em português, de forma a acompanhar plenamente a
-                            formação.
+                                <a class="btn-destaque mt-3" target="_blank" rel="noopener"
+                                    aria-label="Obter direções para o CESAE Lisboa"
+                                    href="https://www.google.com/maps/dir/?api=1&amp;destination=LACS+Santos,+Av.+24+de+Julho+98,+1200-870+Lisboa">
+                                    Obter direções <i class="bi bi-map"></i>
+                                </a>
+                            </article>
                         </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            O que significa frequentar um curso em regime e-learning ou em
-                            regime b-learning?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            O e-learning (electronic learning) corresponde a uma modalidade de
-                            formação
-                            totalmente
-                            online, na qual todo o processo de aprendizagem decorre através de
-                            uma plataforma
-                            digital. Por sua vez, o b-learning (blended learning) corresponde a
-                            uma modalidade
-                            de
-                            formação mista ou híbrida, que combina o ensino online com momentos
-                            presenciais.
-                        </div>
-                    </details>
+                    </div>
                 </div>
-            </details>
-            <!-- cat 2 -->
-            <details class="accordion-item" name="accordionExample">
-                <summary class="accordion-header">
-                    Pré-inscrição
-                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m2 5 6 6 6-6"></path>
-                    </svg>
-                </summary>
-                <div class="accordion-body">
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Como posso efetuar a minha pré-inscrição?
+            </div>
+        </section>
 
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Pode efetuar a sua pré-inscrição no site, na página do respetivo
-                            curso. Clique em "Quero-me Inscrever", preencha o formulário de
-                            pré-inscrição e anexe os documentos pedidos.
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Qual é a diferença entre pré-inscrição e inscrição?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            A pré-inscrição é o ato de submeter a candidatura no site, com a
-                            documentação necessária. Após validação administrativa e processo de
-                            seleção (quando aplicável), os candidatos selecionados passam à fase
-                            de inscrição, com a emissão da Ficha de Inscrição que formaliza a
-                            integração no curso.
-                        </div>
-                    </details>
+        <!-- Outros centros -->
+        <section class="container-fluid my-9 px-0">
+            <div class="container-fluid otros-polos px-9">
+                <div class="row py-4 d-flex justify-content-center text-break">
+                    <!-- Polo Porto -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>Porto</h4>
+                                <div class="polos-div"></div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">Rua Ciríaco Cardoso 186, 4150-212 Porto</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351226195200">226 195 200</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a href="mailto:porto@cesae.pt">porto@cesae.pt</a></p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE Porto"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=CESAE+Digital,+Rua+Ciríaco+Cardoso,+Porto,+Portugal">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Polo São João da Madeira -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>São João da Madeira</h4>
+                                <div class="polos-div"></div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">SANJOTEC - R. de Fundões 151, 3700-121 São João da
+                                            Madeira
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351256001923">256 001 923</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a href="mailto:sjmadeira@cesae.pt">sjmadeira@cesae.pt</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE São João da Madeira"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=SANJOTEC,+R.+de+Fundões+151,+3700-121+São+João+da+Madeira">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Polo Leça da Palmeira -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>Leça da Palmeira</h4>
+                                <div class="polos-div"></div>
+
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">Av Dr. António Macedo, Edificio AEP - Formação
+                                            Profissional, 4450-617 Leça da Palmeira</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351229981975">229 981 975</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a
+                                                href="mailto:lecadapalmeira@cesae.pt">lecadapalmeira@cesae.pt</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE Leça da Palmeira"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Av+Dr.+António+Macedo,+Edificio+AEP+-+Formação+Profissional,+4450-617+Leça+da+Palmeira">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Polo Marco de Canaveses -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>Marco de Canaveses</h4>
+                                <div class="polos-div"></div>
+
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">R. Visconde do Marco 197, 4630-273 Marco de Canaveses
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351255534268">255 534 268</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a
+                                                href="mailto:marcodecanaveses@cesae.pt">marcodecanaveses@cesae.pt</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE Marco de Canaveses"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=R.+Visc.+do+Marco+197,+4630-273+Marco+de+Canaveses">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Polo Vila do Conde -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>Vila do Conde</h4>
+                                <div class="polos-div"></div>
+
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">Av. Júlio Graça 558, 4480-672 Vila do Conde</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info"><a href="tel:+351252638018">252 638 018</a> *</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a
+                                                href="mailto:viladoconde@cesae.pt">viladoconde@cesae.pt</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE Vila do Conde"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Júlio+Graça+558,+4480-672+Vila+do+Conde">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Polo Viseu -->
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>Viseu</h4>
+                                <div class="polos-div"></div>
+
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="small-print">Morada</p>
+                                        <p class="polo-info">Rua Almirante Afonso Cerqueira, 30, 3510-007 Viseu</p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i
+                                            class="bi bi-telephone-outbound"></i></span>
+                                    <div>
+                                        <p class="small-print">Telefone</p>
+                                        <p class="polo-info">
+                                            <a href="tel:+351232432217">232 432 217</a> /
+                                            <a href="tel:+351232432219">232 432 219</a> *
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="polos-dados">
+                                    <span class="icons" aria-hidden="true"><i class="bi bi-envelope-at"></i></span>
+                                    <div>
+                                        <p class="small-print">Email</p>
+                                        <p class="polo-info"><a href="mailto:viseu@cesae.pt">viseu@cesae.pt</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <a class="btn-card" target="_blank" rel="noopener"
+                                        aria-label="Obter direções para o CESAE Viseu"
+                                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua+Almirante+Afonso+Cerqueira,+30,+3510-007+Viseu">
+                                        Obter direções <i class="bi bi-map"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="lg:col-4 md:col-6 sm:col-10">
+                        <article class="card polos h-100">
+                            <div class="card-body">
+                                <h4>As nossas extensões itinerantes</h4>
+                                <div class="polos-div"></div>
+                                <div>
+                                    <p class="polo-info">Com uma rede de extensões itinerantes da nossa atividade,
+                                        que permite oferecer formação de excelência, promovendo a proximidade,
+                                        inovação e requalificação profissional em diferentes comunidades, o CESAE
+                                        Digital está presente nas seguintes localidades:
+                                    <ul>
+                                        <li>Braga</li>
+                                        <li>Freamunde</li>
+                                        <li>Castelo de Paiva</li>
+                                        <li>Vila Meã</li>
+                                        <li>Oliveira de Azeméis</li>
+                                        <li>S. Félix da Marinha</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p><small class="small-print">*Chamada para a rede fixa / móvel nacional</small></p>
                 </div>
-            </details>
-            <!-- cat 3 -->
-            <details class="accordion-item" name="accordionExample">
-                <summary class="accordion-header">
-                    Documentação
-                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m2 5 6 6 6-6"></path>
-                    </svg>
-                </summary>
-                <div class="accordion-body">
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Que documentos necessito de apresentar para realizar a minha
-                            pré-inscrição?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Aquando da pré-inscrição, deverá anexar os seguintes documentos:
-                            - Certificado de habilitações;
-                            - Currículo Vitae (CV).
+            </div>
+        </section>
 
-                            Para cursos Financiados:
-                            - Comprovativo IBAN com titularidade da conta;
-                            - Comprovativo da situação face ao emprego: Desempregado —
-                            declaração atualizada de inscrição no Instituto de Emprego e
-                            Formação Profissional (IEFP); Empregado — declaração atualizada da
-                            entidade patronal com horário de trabalho (horas de entrada e de
-                            saída).
 
-                            Para cursos de Formação de Formadores:
-                            - Documento de Identificação (para inscrição/validação junto da
-                            plataforma NetFORCE).
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Que certificado de habilitações devo apresentar?
-
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Certificado de habilitações válido e homologado pelo Ministério da
-                            Educação de Portugal. Candidatos estrangeiros podem dirigir-se a uma
-                            escola pública com o seu Certificado de Habilitações e pedir
-                            homologação.
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Como posso obter a declaração do IEFP?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            No site do IEFPonline tem uma opção de declarações. Entre com o seu
-                            login, selecione "declaração" e escolha "Declaração de situação
-                            (para fins múltiplos)".
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Existe um prazo definido para a entrega dos documentos?
-                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
-                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            Sim. Aquando da pré-inscrição deverá enviar todos os documentos. A
-                            pré-inscrição só é considerada quando toda a documentação está
-                            entregue; caso isso não aconteça até ao fecho das pré-inscrições, a
-                            sua não será considerada.
-                        </div>
-                        <!-- item que falta -->
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
+        <!-- FAQs -->
+        <section>
+            <div class="mx-9 my-5">
+                <h2> Perguntas Frequentes</h2>
+                <div class="accordion">
+                    <!-- cat 1 -->
+                    <details class="accordion-item" name="accordionExample">
                         <summary class="accordion-header">
                             Geral
                             <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
@@ -592,161 +436,403 @@
                             </svg>
                         </summary>
                         <div class="accordion-body">
-                            <!-- inner accordion 1 -->
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Como posso saber a data de início, o local e o horário dos cursos?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Esta informação encontra-se disponível na página do respetivo curso,
+                                    no início da
+                                    página, logo abaixo da imagem enquadradora.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Em que idioma são lecionados os cursos?
+
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Com exceção dos cursos de Português Língua de Acolhimento,
+                                    direcionados a pessoas
+                                    que
+                                    pretendem aprender Português, todos os cursos são lecionados em
+                                    língua portuguesa.
+                                    Assim, recomenda-se que os participantes tenham um nível avançado de
+                                    compreensão e
+                                    comunicação em português, de forma a acompanhar plenamente a
+                                    formação.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    O que significa frequentar um curso em regime e-learning ou em
+                                    regime b-learning?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    O e-learning (electronic learning) corresponde a uma modalidade de
+                                    formação
+                                    totalmente
+                                    online, na qual todo o processo de aprendizagem decorre através de
+                                    uma plataforma
+                                    digital. Por sua vez, o b-learning (blended learning) corresponde a
+                                    uma modalidade
+                                    de
+                                    formação mista ou híbrida, que combina o ensino online com momentos
+                                    presenciais.
+                                </div>
+                            </details>
                         </div>
                     </details>
-                </div>
-            </details>
-            <!-- cat 4 -->
-            <details class="accordion-item" name="accordionExample">
-                <summary class="accordion-header">
-                    Processo de Seleção
-                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m2 5 6 6 6-6"></path>
-                    </svg>
-                </summary>
-                <div class="accordion-body">
-                    <details class="accordion-item" name="accordionInner">
+                    <!-- cat 2 -->
+                    <details class="accordion-item" name="accordionExample">
                         <summary class="accordion-header">
-                            O que significa ser considerado "Não Elegível"?
+                            Pré-inscrição
                             <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
                                 fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m2 5 6 6 6-6"></path>
                             </svg>
                         </summary>
                         <div class="accordion-body">
-                            Se não cumprir os requisitos definidos para o curso, será
-                            contactado, preferencialmente via e-mail, com indicação dos
-                            critérios não cumpridos. Nesse caso, a candidatura é categorizada
-                            como "Não Elegível" e não passa à fase de seleção.
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Como posso efetuar a minha pré-inscrição?
+
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Pode efetuar a sua pré-inscrição no site, na página do respetivo
+                                    curso. Clique em "Quero-me Inscrever", preencha o formulário de
+                                    pré-inscrição e anexe os documentos pedidos.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Qual é a diferença entre pré-inscrição e inscrição?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    A pré-inscrição é o ato de submeter a candidatura no site, com a
+                                    documentação necessária. Após validação administrativa e processo de
+                                    seleção (quando aplicável), os candidatos selecionados passam à fase
+                                    de inscrição, com a emissão da Ficha de Inscrição que formaliza a
+                                    integração no curso.
+                                </div>
+                            </details>
                         </div>
                     </details>
-                    <details class="accordion-item" name="accordionInner">
+                    <!-- cat 3 -->
+                    <details class="accordion-item" name="accordionExample">
                         <summary class="accordion-header">
-                            Que matéria sai no teste técnico? <svg class="accordion-icon"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            O teste técnico é constituído por questões de escolha múltipla
-                            relacionadas com a área do curso em questão.
-                        </div>
-                    </details>
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Em que consiste o teste de resolução de problemas? <svg class="accordion-icon"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m2 5 6 6 6-6"></path>
-                            </svg>
-                        </summary>
-                        <div class="accordion-body">
-                            O teste de resolução de problemas é constituído por questões de
-                            múltipla escolha, cujo objetivo é dar indicações relativas ao
-                            raciocínio analítico dos candidatos e à sua capacidade de
-                            interpretar situações complexas e agir/tomar decisões.
-                        </div>
-                    </details>
-                </div>
-            </details>
-            <!-- cat 5 -->
-            <details class="accordion-item" name="accordionExample">
-                <summary class="accordion-header">
-                    Inscrição
-                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
-                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m2 5 6 6 6-6"></path>
-                    </svg>
-                </summary>
-                <div class="accordion-body">
-                    <details class="accordion-item" name="accordionInner">
-                        <summary class="accordion-header">
-                            Tenho direito a bolsa ou apoios sociais durante a formação?
+                            Documentação
                             <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
                                 fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="m2 5 6 6 6-6"></path>
                             </svg>
                         </summary>
                         <div class="accordion-body">
-                            Nas ações cofinanciadas, os candidatos podem ter acesso a bolsas e
-                            apoios sociais previstos pelo IEFP ou pelas entidades financiadoras,
-                            mediante o cumprimento dos respetivos requisitos. Para o efeito, são
-                            solicitados o NISS (Número de Identificação de Segurança Social) e o
-                            IBAN com titularidade da conta.
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Que documentos necessito de apresentar para realizar a minha
+                                    pré-inscrição?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Aquando da pré-inscrição, deverá anexar os seguintes documentos:
+                                    <ul>
+                                        <li>Certificado de habilitações;
+                                        </li>
+                                        <li>Currículo Vitae (CV).
+                                        </li>
+                                    </ul>
+
+                                    Para cursos Financiados:
+                                    <ul>
+                                        <li>Comprovativo IBAN com titularidade da conta;</li>
+                                        <li>Comprovativo da situação face ao emprego: <br>
+                                            <ul>
+                                                <li>Desempregado: declaração atualizada de inscrição no Instituto de
+                                                    Emprego
+                                                    e
+                                                    Formação Profissional (IEFP);</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Empregado: declaração atualizada da
+                                                    entidade patronal com horário de trabalho (horas de entrada e de
+                                                    saída).</li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    Para cursos de Formação de Formadores:
+                                    <ul>
+                                        <li>
+                                            Documento de Identificação (para inscrição/validação junto da plataforma
+                                            NetFORCE).
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Que certificado de habilitações devo apresentar?
+
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Certificado de habilitações válido e homologado pelo Ministério da
+                                    Educação de Portugal. Candidatos estrangeiros podem dirigir-se a uma
+                                    escola pública com o seu Certificado de Habilitações e pedir
+                                    homologação.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Como posso obter a declaração do IEFP?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    No site do IEFPonline tem uma opção de declarações. Entre com o seu
+                                    login, selecione "declaração" e escolha "Declaração de situação
+                                    (para fins múltiplos)".
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Existe um prazo definido para a entrega dos documentos?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Sim. Aquando da pré-inscrição deverá enviar todos os documentos. A
+                                    pré-inscrição só é considerada quando toda a documentação está
+                                    entregue; caso isso não aconteça até ao fecho das pré-inscrições, a
+                                    sua não será considerada.
+                                </div>
+                                <!-- item que falta -->
+                            </details>
+                        </div>
+                    </details>
+                    <!-- cat 4 -->
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header">
+                            Processo de Seleção
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6"></path>
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    O que significa ser considerado "Não Elegível"?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Se não cumprir os requisitos definidos para o curso, será
+                                    contactado, preferencialmente via e-mail, com indicação dos
+                                    critérios não cumpridos. Nesse caso, a candidatura é categorizada
+                                    como "Não Elegível" e não passa à fase de seleção.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Que matéria sai no teste técnico? <svg class="accordion-icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    O teste técnico é constituído por questões de escolha múltipla
+                                    relacionadas com a área do curso em questão.
+                                </div>
+                            </details>
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Em que consiste o teste de resolução de problemas? <svg class="accordion-icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    O teste de resolução de problemas é constituído por questões de
+                                    múltipla escolha, cujo objetivo é dar indicações relativas ao
+                                    raciocínio analítico dos candidatos e à sua capacidade de
+                                    interpretar situações complexas e agir/tomar decisões.
+                                </div>
+                            </details>
+                        </div>
+                    </details>
+                    <!-- cat 5 -->
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header">
+                            Inscrição
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6"></path>
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <details class="accordion-item" name="accordionInner">
+                                <summary class="accordion-header">
+                                    Tenho direito a bolsa ou apoios sociais durante a formação?
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="m2 5 6 6 6-6"></path>
+                                    </svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Nas ações cofinanciadas, os candidatos podem ter acesso a bolsas e
+                                    apoios sociais previstos pelo IEFP ou pelas entidades financiadoras,
+                                    mediante o cumprimento dos respetivos requisitos. Para o efeito, são
+                                    solicitados o NISS (Número de Identificação de Segurança Social) e o
+                                    IBAN com titularidade da conta.
+                                </div>
+                            </details>
                         </div>
                     </details>
                 </div>
-            </details>
-        </div>
-    </section>
+        </section>
 
-    <!-- Formulario de contacto -->
-    <section class="m-5 p-5">
-        <h2>Deixa-nos a tua mensagem</h2>
+        <!-- Formulario de contacto -->
+        <section>
+            <div class="mx-9 my-5">
+                <h2>Deixa-nos a tua mensagem</h2>
+                <p>Não encontraste resposta as tuas perguntas ou desejas entrar em contacto connosco?</p>
+                <p>Deixa-nos a tua mensagem e entraremos em contacto o antes possível.</p>
+            </div>
+            <div>
+                <form class="row justify-content-between">
+                    <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
+                        <label class="form-label text-nowrap" for="motivo">Motivo do Contacto: </label>
+                        <select class="form-select form-input flex-grow-1 w-100 m-0" name="motivo" id="motivo" required>
+                            <option value="">-- Escolha uma opção --</option>
+                            <option value="1">Geral</option>
+                            <option value="2">Pré-inscrição</option>
+                            <option value="3">Processo de Seleção</option>
+                            <option value="4">Documentos</option>
+                            <option value="5">Inscrição</option>
+                            <option value="6">Quero ser Parceiro</option>
+                        </select>
+                    </div>
+                    <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
+                        <label class="form-label text-nowrap" for="Nome">Nome: </label>
+                        <input class="form-input flex-grow-1 form-control" type="text" name="Nome" id="Nome"
+                            placeholder="Inserir o primeiro e último Nome" required>
+                    </div>
+                    <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
+                        <label for="email" class="form-label text-nowrap">Endereço Email: </label>
+                        <input type="email" name="email" class="form-input form-control flex-grow-1" id="email"
+                            placeholder="usuario@exemplo.com" required>
+                    </div>
 
-        <div>
-            <form>
-                <div class="form-group row">
-                        <label class="form-label" for="Nome">Nome</label>
-                        <textarea class="form-control" placeholder="Primeiro e ultimo nome"
-                            id="Nome"></textarea>
-                </div>
-                <label for="fieldText" class="form-label">Endereço Email</label>
-                <input type="email" class="form-control" id="fieldText" placeholder="usuario@exemplo.com">
-                <div class="form-text">
-                    We’ll never share your email with anyone else.
-                </div>
-        </div>
-        </form>
-        </div>
-    </section>
-</main>
+                    <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
+                        <label class="form-label text-nowrap" for="Telefone">Telefone: </label>
+                        <input class="form-input flex-grow-1 form-control" type="tel" name="Telefone" id="Telefone"
+                            placeholder="912345678" required>
+                    </div>
+                    <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
+                        <label class="form-label text-nowrap" for="NIF">NIF/NIPC: </label>
+                        <input class="form-input flex-grow-1 form-control" type="text" name="NIF" id="NIF"
+                            placeholder="NIF/NIPC" required>
+                    </div>
+                    <div class="form-field d-block col-12 md:d-flex align-items-start p-5 gap-2">
+                        <label class="form-label text-nowrap" for="Mensagem">Mensagem: </label>
+                        <textarea class="form-input flex-grow-1 form-control" name="Mensagem" id="Mensagem" rows="3"
+                            placeholder="Mensagem" required></textarea>
+                    </div>
+                    <div class="form-field col-12 d-flex align-items-center justify-content-center p-5 gap-2">
+                        <button type="submit" class="btn-form">Enviar</button>
+                        <button type="reset" class="btn-card">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<div class="container-fluid">
-    <footer class="row pt-3 mt-4 d-flex border-top justify-content-between">
-        <!-- copy right -->
-        <div class="col-12 md:col-3 text-center align-content-center py-3">
-            <p class="mb-0">Copyright©2025 CESAE. Todos os direitos reservados</p>
-        </div>
-        <!-- divider -->
-        <div class="md:col-1"></div>
-        <!-- logo -->
-        <div class="col-12 md:col-3 text-center align-content-center py-3">
-            <img src="../Image/cesae-long-white.svg" alt="CESAE Digital Logo" style="height: 40px">
-        </div>
-        <!-- divider -->
-        <div class="md:col-1"></div>
-        <!-- social media -->
-        <div class="col-12 md:col-3 d-flex text-end md:text-center align-content-center py-3">
-            <ul class="social-media list-unstyled d-flex justify-content-end gap-5 p-0 mb-0">
-                <li><a href="https://www.instagram.com/cesae.digital/" target="_blank"
-                        class="d-flex justify-content-center align-items-center " title="Instagram"><i
-                            class="bi bi-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/CesaeDigital" target="_blank"
-                        class="d-flex justify-content-center align-items-center " title="Facebook"><i
-                            class="bi bi-facebook"></i></a>
-                </li>
-                <li><a href="https://www.youtube.com/@cesaedigital" target="_blank"
-                        class="d-flex justify-content-center align-items-center " title="Youtube"><i
-                            class="bi bi-youtube"></i></a>
-                </li>
-                <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank"
-                        class="d-flex justify-content-center align-items-center" title="Linkedin"><i
-                            class="bi bi-linkedin"></i></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</div>
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="row pt-3 mt-4 border-top justify-content-between">
+            <!-- copy right -->
+            <div class="col-12 md:col-3 text-center align-content-center py-3">
+                <p class="mb-0">Copyright©2025 CESAE. Todos os direitos reservados</p>
+            </div>
+            <div class="col-12 md:col-3 text-center align-content-center py-3">
+                <img src="../Image/cesae-long-white.svg" alt="CESAE Digital Logo" style="height: 40px">
+            </div>
+            <div class="col-12 md:col-3 d-flex md:justify-content-end justify-content-center align-content-center py-3">
+                <ul class="social-media list-unstyled d-flex justify-content-end gap-5 p-0 mb-0">
+                    <li><a href="https://www.instagram.com/cesae.digital/" target="_blank"
+                            class="d-flex justify-content-center align-items-center " title="Instagram"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/CesaeDigital" target="_blank"
+                            class="d-flex justify-content-center align-items-center " title="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@cesaedigital" target="_blank"
+                            class="d-flex justify-content-center align-items-center " title="Youtube"><i
+                                class="bi bi-youtube"></i></a>
+                    </li>
+                    <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank"
+                            class="d-flex justify-content-center align-items-center" title="Linkedin"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
 
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
-    crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
 
 </body>
 
