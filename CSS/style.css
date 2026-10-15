@@ -1,3 +1,77 @@
+/* -----------------------------------FONTS----------------------------------- */
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-700.woff2') format('woff2');
+}
+
+/* Tipo de letra */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A0B3E
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: #1A0B3E;
+}
+
 /* ==========================================================================
    1. ESTILIZAÇÃO GLOBAL DA NAVBAR E PESQUISA
    ========================================================================== */
@@ -205,76 +279,3 @@ main.container .card-title {
     margin: 0.8rem 0 ;
 }
 
-/* -----------------------------------FONTS----------------------------------- */
-@font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-500.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-600.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-700.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-600.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-700.woff2') format('woff2');
-}
-
-/* Tipo de letra */
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #1A0B3E
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Quicksand';
-    font-weight: 700;
-    color: #1A0B3E;
-}
