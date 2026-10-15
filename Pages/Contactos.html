@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
+    <header class="sticky-top">
+        <nav class="navbar lg:navbar-expand bg-1 fg-2">
             <div class="container-fluid justify-content-between">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../Image/cesae-short.svg" alt="logo-CESAE">
@@ -67,20 +67,17 @@
         </nav>
     </header>
 
-    <main class="mx-9 my-5">
+    <main>
         <!-- Polos -->
-        <section>
-            <div class="mx-9 my-5">
+        <section id="polo-de-lisboa">
+            <div class="mx-9 py-9">
                 <h2>Os nossos Polos</h2>
                 <p>
                     Saiba aqui onde nos pode encontrar e como pode entrar em contacto com qualquer um dos nossos
                     Polos.
                 </p>
             </div>
-        </section>
-
         <!-- Polo de Lisboa -->
-        <section>
             <div class="container-fluid">
                 <div class="destaque mx-9 lg:py-1 my-3">
                     <div class="row align-items-center justify-content-center g-9">
@@ -133,7 +130,7 @@
         </section>
 
         <!-- Outros centros -->
-        <section class="container-fluid my-9 px-0">
+        <section id="outros-polos" class="container-fluid my-9 px-0">
             <div class="container-fluid otros-polos px-9">
                 <div class="row py-4 d-flex justify-content-center text-break">
                     <!-- Polo Porto -->
@@ -424,7 +421,7 @@
 
 
         <!-- FAQs -->
-        <section>
+        <section id="faqs">
             <div class="mx-9 my-5">
                 <h2> Perguntas Frequentes</h2>
                 <div class="accordion">
@@ -750,9 +747,9 @@
                 <p>Deixa-nos a tua mensagem e entraremos em contacto o antes possível.</p>
             </div>
             <div>
-                <form class="row justify-content-between">
+                <form class="row justify-content-between" action="/Pages/utils/success.html">
                     <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
-                        <label class="form-label text-nowrap" for="motivo">Motivo do Contacto: </label>
+                        <label class="form-label text-nowrap" for="motivo">Motivo do Contacto: *</label>
                         <select class="form-select form-input flex-grow-1 w-100 m-0" name="motivo" id="motivo" required>
                             <option value="">-- Escolha uma opção --</option>
                             <option value="1">Geral</option>
@@ -764,28 +761,28 @@
                         </select>
                     </div>
                     <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
-                        <label class="form-label text-nowrap" for="Nome">Nome: </label>
+                        <label class="form-label text-nowrap" for="Nome">Nome: *</label>
                         <input class="form-input flex-grow-1 form-control" type="text" name="Nome" id="Nome"
                             placeholder="Inserir o primeiro e último Nome" required>
                     </div>
                     <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
-                        <label for="email" class="form-label text-nowrap">Endereço Email: </label>
+                        <label for="email" class="form-label text-nowrap">Endereço Email: *</label>
                         <input type="email" name="email" class="form-input form-control flex-grow-1" id="email"
                             placeholder="usuario@exemplo.com" required>
                     </div>
 
                     <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
-                        <label class="form-label text-nowrap" for="Telefone">Telefone: </label>
+                        <label class="form-label text-nowrap" for="Telefone">Telefone: *</label>
                         <input class="form-input flex-grow-1 form-control" type="tel" name="Telefone" id="Telefone"
                             placeholder="912345678" required>
                     </div>
                     <div class="form-field d-block col-12 md:col-6 md:d-flex align-items-center p-5 gap-2">
                         <label class="form-label text-nowrap" for="NIF">NIF/NIPC: </label>
                         <input class="form-input flex-grow-1 form-control" type="text" name="NIF" id="NIF"
-                            placeholder="NIF/NIPC" required>
+                            placeholder="NIF/NIPC">
                     </div>
                     <div class="form-field d-block col-12 md:d-flex align-items-start p-5 gap-2">
-                        <label class="form-label text-nowrap" for="Mensagem">Mensagem: </label>
+                        <label class="form-label text-nowrap" for="Mensagem">Mensagem: *</label>
                         <textarea class="form-input flex-grow-1 form-control" name="Mensagem" id="Mensagem" rows="3"
                             placeholder="Mensagem" required></textarea>
                     </div>
