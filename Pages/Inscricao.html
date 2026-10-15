@@ -62,9 +62,8 @@
                         <form
                             class="position-relative d-flex align-items-center mt-3 mt-lg-0 w-100 w-lg-auto search-form-custom"
                             role="search" action="CursosModulos.html" method="get">
-                            <input class="form-control text-truncate pe-5 w-100 search-input-custom"
-                                type="search" name="q" placeholder="Encontra o Curso que procuras"
-                                aria-label="Pesquisar cursos">
+                            <input class="form-control text-truncate pe-5 w-100 search-input-custom" type="search"
+                                name="q" placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
                             <button class="btn-search" type="submit" aria-label="Pesquisar">
                                 <i class="bi bi-search" aria-hidden="true"></i>
                             </button>
@@ -120,11 +119,31 @@
                                         <input type="text" class="form-control" id="documento" name="documento"
                                             placeholder="N.º do Cartão de Cidadão ou Passaporte" required>
                                     </div>
+                                    <!-- Curso pretendido -->
+                                    <div class="mb-3">
+                                        <label for="cursoSelect" class="form-label fw-bold">Curso Desejado *</label>
+                                        <select class="form-select" id="cursoSelect" name="curso" required>
+                                            <option value="" selected disabled>Selecione um curso...</option>
+                                            <option value="IA-RH">Inteligência Artificial para Recursos Humanos</option>
+                                            <option value="Tec-Espec-Dev-Prod-Multi">Técnico Especialista em
+                                                Desenvolvimento de Produtos Multimédia</option>
+                                            <option value="LinkedIn Estratégico">LinkedIn Estratégico - Aumente
+                                                Resultados com IA</option>
+                                            <option value="Pedagogia-Formadores">Formação Pedagógica Inicial de
+                                                Formadores</option>
+                                            <option value="Eletronica-Zero">LabMaker CESAE : Eletrónica do Zero</option>
+                                            <option value="Fortinet">Fortinet - Fortigate & Fortimanager</option>
+                                            <option value="Cloud-Comp">Cloud Computing and Network Administration</option>
+                                            <option value="Gestor-Coord">Gestor / Coordenador de Formação</option>
+                                            <option value="Tec-App-Info">Técnico Especialista em Aplicações Informáticas</option>
+
+                                        </select>
+                                    </div>
 
                                     <!-- Botão de Inscrição -->
 
                                     <div class="d-grid">
-                                        <button type="submit" 
+                                        <button type="submit"
                                             class="btn btn-institutional btn-lg fw-bold text-decoration-none text-center">Inscrever</button>
                                     </div>
                                 </form>
