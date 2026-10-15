@@ -62,9 +62,8 @@
                         <form
                             class="position-relative d-flex align-items-center mt-3 mt-lg-0 w-100 w-lg-auto search-form-custom"
                             role="search" action="CursosModulos.html" method="get">
-                            <input class="form-control text-truncate pe-5 w-100 search-input-custom"
-                                type="search" name="q" placeholder="Encontra o Curso que procuras"
-                                aria-label="Pesquisar cursos">
+                            <input class="form-control text-truncate pe-5 w-100 search-input-custom" type="search"
+                                name="q" placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
                             <button class="btn-search" type="submit" aria-label="Pesquisar">
                                 <i class="bi bi-search" aria-hidden="true"></i>
                             </button>
@@ -85,12 +84,12 @@
                     <div class="col-12 col-md-8 col-lg-6">
                         <div class="card shadow-sm border-0">
                             <div class="card-body p-4 p-md-5">
-                                <h2 class="card-title text-center mb-4 fw-bold">Inscrição no Curso</h2>
+                                <h2 class="card-title text-center mb-4 fw-bold">Pré-Inscrição no Curso</h2>
                                 <p class="text-muted text-center mb-4">
                                     Preencha os seus dados abaixo para efetuar a sua candidatura.
                                 </p>
 
-                                <form class="needs-validation">
+                                <form class="needs-validation" action="../Pages/utils/success.html">
                                     <!-- Nome Completo -->
                                     <div class="mb-3">
                                         <label for="nome" class="form-label fw-semibold">Nome Completo *</label>
@@ -120,6 +119,26 @@
                                         <input type="text" class="form-control" id="documento" name="documento"
                                             placeholder="N.º do Cartão de Cidadão ou Passaporte" required>
                                     </div>
+                                    <!-- Curso pretendido -->
+                                    <div class="mb-3">
+                                        <label for="cursoSelect" class="form-label fw-bold">Curso Desejado *</label>
+                                        <select class="form-select" id="cursoSelect" name="curso" required>
+                                            <option value="" selected disabled>Selecione um curso...</option>
+                                            <option value="IA-RH">Inteligência Artificial para Recursos Humanos</option>
+                                            <option value="Tec-Espec-Dev-Prod-Multi">Técnico Especialista em
+                                                Desenvolvimento de Produtos Multimédia</option>
+                                            <option value="LinkedIn Estratégico">LinkedIn Estratégico - Aumente
+                                                Resultados com IA</option>
+                                            <option value="Pedagogia-Formadores">Formação Pedagógica Inicial de
+                                                Formadores</option>
+                                            <option value="Eletronica-Zero">LabMaker CESAE : Eletrónica do Zero</option>
+                                            <option value="Fortinet">Fortinet - Fortigate & Fortimanager</option>
+                                            <option value="Cloud-Comp">Cloud Computing and Network Administration</option>
+                                            <option value="Gestor-Coord">Gestor / Coordenador de Formação</option>
+                                            <option value="Tec-App-Info">Técnico Especialista em Aplicações Informáticas</option>
+
+                                        </select>
+                                    </div>
 
                                     <!-- Botão de Inscrição -->
 
@@ -139,7 +158,7 @@
 
     <!-- footer start -->
     <!-- Fixed bottom na pagina curta -->
-    <footer class="row py-3 m-0 border-top justify-content-between align-items-center footer-custom fixed-bottom">
+    <footer class="row py-3 m-0 border-top justify-content-between align-items-center footer-custom ">
         <!-- copy right -->
         <div class="col-12 col-md-4 text-center text-md-start small mb-2 mb-md-0">
             <p class="mb-0">Copyright©2026 CESAE. Todos os direitos reservados</p>
