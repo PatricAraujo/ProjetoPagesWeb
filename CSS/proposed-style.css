@@ -79,15 +79,10 @@ h6 {
 }
 
 /* -----------------------------------NAV BAR----------------------------------- */
-/* Fixar o nav bar ao topo */
+/* Cor background do navbar */
 nav {
     background-color: #F4F1FA;
     border-bottom: 1px #E4DFF0 solid;
-}
-
-
-.form-select {
-    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
 }
 
 /* definições do tipo de letra do navbar */
@@ -97,6 +92,7 @@ nav {
     text-decoration: none;
 }
 
+/* cores dos links no navbar */
 .navbar a:hover {
     color: #92127B;
 }
@@ -122,6 +118,7 @@ nav {
     color: white;
 }
 
+/* cor dos links dentro do destaque gradiente */
 .destaque .polo-info a {
     color: white;
     text-decoration: 0.7px underline #B9B3CC;
@@ -135,7 +132,7 @@ nav {
     text-underline-offset: 3px;
 }
 
-/* cor dos links dentro do destaque gradiente e no carousel*/
+/* cor dos botão dentro do destaque gradiente e no carousel*/
 .destaque .btn-destaque,
 .carousel .carousel-item a {
     display: inline-flex;
@@ -149,11 +146,13 @@ nav {
     text-decoration: none;
 }
 
+/* cor dos botão dentro do destaque gradiente e no carousel qd hover*/
 .destaque .btn-destaque:hover {
     background: rgb(244, 241, 250, 0.80);
     color: #382068;
 }
 
+/* espaçamento do texto dentro do destaque de Lisboa */
 .lisboa-descricao {
     font-size: 1.1rem;
     font-weight: 500;
@@ -172,21 +171,16 @@ nav {
     line-height: 1.4;
 }
 
-.polos .card-body {
-    display: flex;
-    flex-direction: column;
-    padding: 25px 15px;
-}
-
+/* linha divisoria gradiente */
 .polos-div {
     width: 100%;
     height: 2.25px;
-    /* background: #E8008A; */
     background: linear-gradient(120deg, #382068 0%, #6A1B7E 70%, #B0107F 100%);
     border-radius: 2px;
     margin: 0.4rem 0 1.1rem;
 }
 
+/* cada secção que contem um dado do polo. ex. secção morada */
 .polos-dados {
     display: flex;
     align-items: center;
@@ -208,7 +202,12 @@ body a {
     color: #0A7BC2;
 }
 
+/* cor dos links ao passar o rato por cima*/
+body a:hover {
+    color: #92127B;
+}
 
+/* cor do hover no dropdown */
 select,
 ::picker(select) {
     appearance: base-select;
@@ -219,11 +218,8 @@ option:focus {
     background-color: #e6008a;
     color: #fff;
 }
+/* .cor do hover no dropdown */
 
-/* cor dos links ao passar o rato por cima*/
-body a:hover {
-    color: #92127B;
-}
 
 /* -----------------------------------Buttons----------------------------------- */
 
@@ -426,6 +422,13 @@ form select,
     border: 1px solid #B9B3CC;
     border-radius: 8px;
 }
+
+/* espaçamento do dropdown no form */
+.form-select {
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+}
+
+/* -------------------------------------------------------------------------- */
 
 /* Desktop: tudo na mesma linha */
 
