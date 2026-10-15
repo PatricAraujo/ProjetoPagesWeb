@@ -189,9 +189,19 @@ main.container .card-title {
 .wireColor
 {
     width: 100%;
-    height: 2.25px;
+    height: 2px!important;
     /* background: #E8008A; */
     background: linear-gradient(120deg, #382068 0%, #6A1B7E 70%, #B0107F 100%);
     border-radius: 2px;
-    margin: 0.4rem 0 1.1rem;
+    /* margin: 0.4rem 0 1.1rem; */
+    
+/* Alteração extra pra manter as linhas separadoras do mesmo tamanho e nao colapsar por causa dos outros elementos */
+    flex-shrink: 0 ; /* Impede que a linha seja esmagada ou esticada pelo flexbox */
+    min-height: 3px ;
+    max-height: 3px ;
+    border: none ;
+    outline: none ;
+    border-radius: 2px;
+    margin: 0.8rem 0 ;
 }
+
