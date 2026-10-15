@@ -134,7 +134,7 @@ body a:hover {
 /* -----------------------------------ICONS----------------------------------- */
 
 /* cor dos icons de morada */
-.bi-geo-alt {
+.bi-geo-alt, .bi-globe2 {
     color: #382068;
     padding: 5px;
     -webkit-text-stroke: 0.4px currentColor;
@@ -483,11 +483,6 @@ footer {
         outline-offset: 3px;
     }
 
-    .destaque .bi-geo-alt,
-    .destaque .bi-envelope-at,
-    .destaque .bi-telephone-outbound {
-        color: #ffffff;
-    }
 
     .etiqueta {
         display: inline-block;
