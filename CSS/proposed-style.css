@@ -484,3 +484,14 @@ img{
     border-radius: 10px;
 
 }
+
+#formacao div .bi{
+    font-size: 100px;
+    color:#382068;
+}
+
+/* Testemunhas */
+.blockquote {
+    font-style: italic;
+    font-size: 13px;
+}

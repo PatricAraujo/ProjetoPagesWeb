@@ -19,13 +19,14 @@
     <link rel="icon" href="../Image/favicon.ico" sizes="any">
 
 </head>
+<!-- THIS IS A TEST -->
 
 <body>
     <!-- Navbar -->
     <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
         <div class="container-fluid justify-content-between">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../Image/cesae-short.svg" alt="logo-CESAE">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/Image/cesae-short.svg" alt="logo-CESAE">
             </a>
             <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
@@ -40,16 +41,16 @@
 
                     <ul class="navbar-nav lg:mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Início</a>
+                            <a class="nav-link" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="CursosModulos.html">Cursos</a>
+                            <a class="nav-link" href="./Pages/CursosModulos.html">Cursos</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
+                            <a class="nav-link" aria-current="page" href="./Pages/Parceiros.html">Parceiros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contactos.html">Contactos</a>
+                            <a class="nav-link" href="./Pages/Contactos.html">Contactos</a>
                         </li>
                     </ul>
                     <form class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
@@ -66,16 +67,6 @@
     </nav>
 
     <main>
-
-        <!--           <div
-            id="carouselMultiple"
-            class="carousel slide"
-            data-bs-autoplay="true"
-            data-bs-ends="loop"
-            data-bs-interval="2000"
-            data-bs-wrap="true"
-          > -->
-
         <!-- carousel  -->
         <div id="carouselExampleContent" class="carousel slide my-9 mx-12 carousel slide">
             <div class="carousel-inner rounded-5" data-bs-autoplay="true" data-bs-ends="loop" data-bs-interval="4000"
@@ -92,10 +83,11 @@
                         <div class=" md:col-6 md:d-flex d-none justify-content-center align-items-center">
                             <img class="my-9 object-fit-cover"
                                 src="https://archerpoint.com/wp-content/uploads/2019/04/digital-transformationn.jpg"
-                                style="aspect-ratio: 16 / 9; object-position: 30% 90%; width: 600px;" alt="">
+                                style="aspect-ratio: 16 / 9; object-position: 30% 90%; max-width: 600px;" alt="">
                         </div>
                     </div>
                 </div>
+
                 <div class="carousel-item card2 active align-content-center">
                     <div class="row">
                         <div class=" md:col-6 md:d-flex d-none justify-content-center align-items-center">
@@ -108,10 +100,11 @@
                             <h3>O CESAE Digital chega a Lisboa</h3>
                             <p class="mb-3">Vem conhecer o novo espaço. Tira as tuas dúvidas e
                                 descobre os cursos disponíveis.</p>
-                            <div><a class="btn-destaque" href="#">Quero saber mais</a></div>
+                            <div><a class="btn-destaque" href="/Pages/Contactos.html">Quero saber mais</a></div>
                         </div>
                     </div>
                 </div>
+
                 <div class="carousel-item card3 active align-content-center">
                     <div class="row">
                         <div class="d-flex flex-column justify-content-center p-9 rounded-5 col-12 md:col-6 text end"
@@ -119,7 +112,7 @@
                             <h3>Não sabes por onde começar? Nós ajudamos</h3>
                             <p class="mb-3">Fala com a nossa equipa e descobre o curso
                                 que melhor se adapta ao teu percurso e aos teus objetivos.</p>
-                            <div><a class="btn-destaque" href="/Pages/CursosModulos.html">Encontrar curso</a></div>
+                            <div><a class="btn-destaque" href="/Pages/Contactos.html#formulario">Fala connosco</a></div>
                         </div>
                         <div class=" md:col-6 md:d-flex d-none justify-content-center align-items-center">
                             <img class="my-9 object-fit-cover"
@@ -131,15 +124,15 @@
             </div>
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
                 <button class="btn-icon btn-sm carousel-control-play-pause" type="button"
-                    data-bs-target="#carouselExampleInterval" aria-label="Pause" data-bs-pause-label="Pause"
+                    data-bs-target="#carouselExampleContent" aria-label="Pause" data-bs-pause-label="Pause"
                     data-bs-play-label="Play">
                     <span class="carousel-icon-pause" aria-hidden="true"></span>
                     <span class="carousel-icon-play" aria-hidden="true"></span>
@@ -155,60 +148,130 @@
                 <p>Os nossos cursos estão divididos em 4 áreas de formação distintas. Carrega naquela que mais se adequa
                     aquilo que procuras e vê o que temos para te oferecer.</p>
             </div>
-            <div class="container-fluid">
-                <div class="row">
+            <div class="container">
+                <div class="row" id="formacao">
                     <!-- Item de Slide-->
                     <div class="col-12 sm:col-6 md:col-3 mb-5 mb-md-0 text-center">
                         <i class="bi bi-code-slash"></i>
-                        <h2>Development</h2>
-                        <a class="nav-link btn rounded-pill btn-primary text-light"
-                            href="/fldrSite/pages/coursesList.aspx?area=6C5A664441382B7A624A466E3055324943642F387542432F4C366D4975314B772F5243503877646E544A513D">Ver
-                            Cursos <i class="fa-solid fa-chevron-right"></i></a>
+                        <h3>Development</h3>
                     </div>
                     <!-- /Item de Slider -->
 
                     <!-- Item de Slide-->
                     <div class="col-12 sm:col-6 md:col-3 mb-5 mb-md-0 text-center">
                         <i class="bi bi-collection-play"></i>
-                        <h2>Media Design</h2>
-                        <a class="nav-link btn rounded-pill btn-primary text-light"
-                            href="/fldrSite/pages/coursesList.aspx?area=4F6C36664F3072782F4E72736A30643448466764526D4C713936737A6B636A47417A5A504A6E3059472F4D3D">Ver
-                            Cursos <i class="fa-solid fa-chevron-right"></i></a>
+                        <h3>Media Design</h3>
                     </div>
                     <!-- /Item de Slider -->
 
                     <!-- Item de Slide-->
                     <div class="col-12 sm:col-6 md:col-3 mb-5 mb-md-0 text-center">
                         <i class="bi bi-display"></i>
-                        <h2>IT Network</h2>
-                        <a class="nav-link btn rounded-pill btn-primary text-light"
-                            href="/fldrSite/pages/coursesList.aspx?area=38654B66775477754658585531525974775561326C6B333967524A78526C567A484A323667754A4B2B69383D">Ver
-                            Cursos <i class="fa-solid fa-chevron-right"></i></a>
+                        <h3>IT Network</h3>
                     </div>
                     <!-- /Item de Slider -->
 
                     <!-- Item de Slide-->
                     <div class="col-12 sm:col-6 md:col-3 mb-5 mb-md-0 text-center">
                         <i class="bi bi-people"></i>
-                        <h2>People</h2>
-                        <a class="nav-link btn rounded-pill btn-primary text-light"
-                            href="/fldrSite/pages/coursesList.aspx?area=72576A5250467547426767724C345845336A426B796C46766545445835317668">Ver
-                            Cursos <i class="fa-solid fa-chevron-right"></i></a>
+                        <h3>People</h3>
                     </div>
                     <!-- /Item de Slider -->
                 </div>
+                <div class="flex-grow-1 justify-self-center"><a class="btn-form  text-center"
+                        href="/Pages/CursosModulos.html">Ver todos
+                        os
+                        Cursos</a></div>
             </div>
         </section>
 
 
-        <!-- benefits -->
+        <!-- benefits
         Porquê o CESAE Digital
 
         “Formação prática”: aprendes a fazer, não só a teoria.
         “Formadores com experiência”: acompanhamento de quem conhece o setor.
-        “Ligação ao mercado”: cursos pensados para as necessidades das empresas.
+        “Ligação ao mercado”: cursos pensados para as necessidades das empresas. -->
         <!-- testimonies -->
+        <section class="container-fluid my-5 otros-polos">
+            <div class="mx-9 pt-5">
+                <h3>O que dizem sobre nós</h3>
+                <p>Quem passa pelo CESAE não consegue ficar indiferente ao que vive no nosso centro. Sejam formandos,
+                    formadores ou empresas, todos têm uma palavra a dizer sobre a sua experiência.</p>
+            </div>
+            <div class=" px-9">
+                <div class="row py-4 d-flex justify-content-center text-break">
+                    <!-- Testemunha 1 -->
+                    <div class="col-10 md:col-3">
+                        <div class="card-body">
+                            <img src="https://www.cesaedigital.pt/content/media/9e87de7a-412d-4d9e-9ae5-4222d6876998.jpg"
+                                class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width: 120;"
+                                loading="lazy" alt="...">
+                            <div class="polos-div"></div>
+                            <h5 class="mt-2 mb-0">João Azevedo</h5>
+                            <h6>180 Consulting - CFO</h6>
+                            <p class="blockquote my-5 testemunho fg-2">Quem passa pelo CESAE não consegue ficar
+                                indiferente ao que vive no nosso centro.
+                                Sejam formandos, formadores ou empresas, todos têm uma palavra a dizer sobre a sua
+                                experiência.</p>
+                        </div>
+                    </div>
 
+                    <div class="col-10 md:col-3">
+                        <div class="card-body">
+                            <img src="https://www.cesaedigital.pt/content/media/27222338-0014-4a24-adc1-5b5d854543b0.jpeg"
+                                class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width: 120;"
+                                loading="lazy" alt="...">
+                            <div class="polos-div"></div>
+                            <h5 class="mt-2 mb-0">Sara Monteiro</h5>
+                            <h6>Formadora - Programação</h6>
+                            <p class="blockquote my-5 fg-2">“Fui aluna do Cesae há 5 anos e há dois formadora desta
+                                casa. O
+                                Cesae mudou a minha vida do ponto de vista de utilizadora. Por isso, sempre que acolho
+                                uma
+                                nova turma encaro o desafio como uma oportunidade de devolver e semear outros
+                                processos como o meu. O mais prazeroso em dar formação é ver nascer o brilho no
+                                olhar dos nossos formandos, vê-los florescer em capacidades técnicas e pessoais.
+                                Os alunos do cesae são empenhados e motivados, e isso torna o processo de
+                                ensiná-los mais fácil.”</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 md:col-3">
+                        <div class="card-body">
+                            <img src="https://www.cesaedigital.pt/content/media/77e90c76-a939-4ef1-b998-3c9c38227db2.jpeg"
+                                class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width: 120;"
+                                loading="lazy" alt="...">
+                            <div class="polos-div"></div>
+                            <h5 class="mt-2 mb-0">Ricardo Moisés Moreira</h5>
+                            <h6>Formador - Programação</h6>
+                            <p class="blockquote my-5 fg-2">“Ser formador no CESAE Digital é uma experiência
+                                extremamente
+                                gratificante.
+                                Gosto da interação com os formandos, da partilha de conhecimento e do ambiente dinâmico
+                                que se vive em cada sessão. O compromisso com a qualidade da formação e a valorização
+                                dos formadores fazem toda a diferença. Sinto-me valorizado e integrado numa equipa
+                                dedicada à excelência na formação. ”</p>
+                        </div>
+                    </div>
+
+                    <div class="col-10 md:col-3">
+                        <div class="card-body">
+                            <img src="https://www.cesaedigital.pt/content/media/93f65c98-1396-46a0-9af5-39eb4464f1d9.jpg"
+                                class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width: 120;"
+                                loading="lazy" alt="...">
+                            <div class="polos-div"></div>
+                            <h5 class="mt-2 mb-0">Ana Rocha</h5>
+                            <h6>Formanda - Processo RVCC Escolar-NS</h6>
+                            <p class="blockquote my-5 fg-2">“Foi um processo muito trabalhoso, emotivo, mas com muita
+                                dedicação, aqui revivi memórias passadas, refleti sobre o presente e tomei consciência
+                                de como tornar um futuro melhor. Com esta qualificação espero realizar alguns dos meus
+                                sonhos.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
