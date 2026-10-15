@@ -78,6 +78,10 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh; /* telemóveis: ignora a barra do browser */
+    display: flex;
+    flex-direction: column;
 }
 
 h1,
@@ -91,6 +95,9 @@ h6 {
     color: #1A0B3E;
 }
 
+main {
+    flex: 1 0 auto; /* ocupa o espaço livre e empurra o rodapé para baixo */
+}
 
 /* -----------------------------------NAV BAR----------------------------------- */
 /* Fixar o nav bar ao topo */
@@ -496,6 +503,7 @@ footer {
     }
 }
 
+
 /* Estilos específicos da página Parceiros (transferidos do HTML) */
 /* Logos visíveis de cada vez: 5 no ecrã grande, 3 em tablet, 2 no telemóvel */
       #carouselMultiple {
@@ -509,23 +517,9 @@ footer {
         #carouselMultiple { --bs-carousel-items: 2; }
       }
 
-      /* Cada logo numa caixa do mesmo tamanho */
-      .parceiro-btn { cursor: pointer; border-radius: 1.5rem; }
-      .parceiro-btn img {
-        aspect-ratio: 3 / 2;
-        object-fit: contain;
-        padding: 1rem;
-        background: #fff;
-        border: 2px solid #e4dff0;
-        border-radius: 1.5rem;
-        transition: border-color 0.15s, box-shadow 0.15s;
-      }
-      .parceiro-btn:hover img { border-color: #e0038a; }
-      .parceiro-btn[aria-pressed="true"] img {
-        border-color: #e0038a;
-        box-shadow: 0 0 0 3px rgba(224, 3, 138, 0.3);
-      }
-      .parceiro-btn:focus-visible { outline: 3px solid #3f1f69; outline-offset: 2px; }
+   
+   
+      
 
       /* Campo sem informação */
       .em-falta {
@@ -557,10 +551,67 @@ form[role="search"] {
     max-width: 600px;
 }
 
-#polo-mapa {
-    min-height: 320px;
-}
 
 footer .logo {
     height: 40px;
+}
+
+/* ---------- Cards dos parceiros sem JS (:target) ---------- */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.card-parceiro { display: none; scroll-margin-top: 6rem; }
+.card-parceiro:target { display: block; }
+
+/* Sem nada selecionado, mostra o primeiro parceiro */
+.cards-parceiros:not(:has(:target)) .card-parceiro:first-child { display: block; }
+
+/* Substitui o antigo #polo-mapa (os IDs não se podem repetir) */
+.polo-mapa { min-height: 320px; }
+
+/* ---------- Logótipos do carrossel (antes .parceiro-btn) ---------- */
+/* Anula o estilo de botão de ".carousel .carousel-item a" */
+.carousel .carousel-item a.parceiro-link {
+    display: block;
+    padding: 0;
+    background: none;
+    border-radius: 1.5rem;
+}
+.parceiro-link { cursor: pointer; }
+.parceiro-link img {
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #e4dff0;
+    border-radius: 1.5rem;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+.parceiro-link:hover img { border-color: #e0038a; }
+.parceiro-link:focus-visible { outline: 3px solid #3f1f69; outline-offset: 2px; }
+
+/* Logótipo do parceiro ativo (substitui aria-pressed="true") */
+body:not(:has(.card-parceiro:target)) .parceiro-link[href="#adecco"] img,
+body:has(#adecco:target) .parceiro-link[href="#adecco"] img,
+body:has(#bosch:target) .parceiro-link[href="#bosch"] img,
+body:has(#bpi:target) .parceiro-link[href="#bpi"] img,
+body:has(#cin:target) .parceiro-link[href="#cin"] img,
+body:has(#ctt:target) .parceiro-link[href="#ctt"] img,
+body:has(#cuf:target) .parceiro-link[href="#cuf"] img,
+body:has(#edp:target) .parceiro-link[href="#edp"] img,
+body:has(#greenvolt:target) .parceiro-link[href="#greenvolt"] img,
+body:has(#barraqueiro:target) .parceiro-link[href="#barraqueiro"] img,
+body:has(#ikea:target) .parceiro-link[href="#ikea"] img,
+body:has(#intelcia:target) .parceiro-link[href="#intelcia"] img,
+body:has(#manpower:target) .parceiro-link[href="#manpower"] img,
+body:has(#motaengil:target) .parceiro-link[href="#motaengil"] img,
+body:has(#prio:target) .parceiro-link[href="#prio"] img,
+body:has(#proef:target) .parceiro-link[href="#proef"] img,
+body:has(#soc:target) .parceiro-link[href="#soc"] img,
+body:has(#sogrape:target) .parceiro-link[href="#sogrape"] img,
+body:has(#sugal:target) .parceiro-link[href="#sugal"] img,
+body:has(#tres60:target) .parceiro-link[href="#tres60"] img,
+body:has(#worten:target) .parceiro-link[href="#worten"] img {
+    border-color: #e0038a;
+    box-shadow: 0 0 0 3px rgba(224, 3, 138, 0.3);
 }
