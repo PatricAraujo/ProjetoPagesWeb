@@ -58,7 +58,10 @@
 /* Tipo de letra */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #1A0B3E
+    color: #1A0B3E;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1,
@@ -71,7 +74,9 @@ h6 {
     font-weight: 700;
     color: #1A0B3E;
 }
-
+main{
+    flex: 1;
+}
 /* ==========================================================================
    1. ESTILIZAÇÃO GLOBAL DA NAVBAR E PESQUISA
    ========================================================================== */
