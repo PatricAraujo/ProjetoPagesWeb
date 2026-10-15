@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap 5.3.3 (Estável para manter os cartões e grelha funcionais) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS pagina -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <title> CESAE Digital – Desenvolvimento das Competências Digitais </title>
+    <link rel="icon" href="../Image/favicon.ico" sizes="any">
+</head>
+
+<body>
+
+    <!-- header-start -->
+    <header>
+        <!-- Top NAV -->
+        <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Image/cesae-short.svg" alt="logo-CESAE">
+                </a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                    <i class="bi bi-list"></i>
+                </button>
+                <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav"
+                    aria-labelledby="navbarNavLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
+                    </div>
+                    <div class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center">
+
+                        <ul class="navbar-nav lg:mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CursosModulos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contactos.html">Contactos</a>
+                            </li>
+                        </ul>
+                        <form class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
+                            style="max-width: 600px;" role="search" action="CursosModulos.html" method="get">
+                            <input class="form-control text-truncate pe-5" type="search" name="q"
+                                placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
+                            <button class="btn-search" type="submit" aria-label="Pesquisar">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main start -->
+    <main class="mx-9 my-5">
+        <section>
+            <div class="row row-cols-1 md:row-cols-3 g-4">
+
+                <!-- CURSO 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/cursoIA.jpg" class="card-img-top" alt="Curso de IA para RH">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Inteligência Artificial para Recursos Humanos
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                6 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-secondary fs-6 mb-2">100,00€</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/especialistaDevProd.jpg" class="card-img-top"
+                            alt="Especialista em Desenvolvimento de Produtos">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Técnico Especialista em Desenvolvimento de Produtos Multimédia
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                8 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-success fs-6 mb-2">Gratuito</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/linkedInEstrategico.jpg" class="card-img-top"
+                            alt="Curso LinkedIn Estratégico com IA">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                LinkedIn Estratégico - Aumente Resultados com IA
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                12 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-secondary fs-6 mb-2">115,00€</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/cursoIA.jpg" class="card-img-top" alt="Curso Formação Pedagógica">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Formação Pedagógica Inicial de Formadores
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                6 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-success fs-6 mb-2">Gratuito</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/eletronicaOuRedes.jpg" class="card-img-top" alt="Curso Eletrónica do Zero">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                LabMaker CESAE : Eletrónica do Zero
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                8 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-success fs-6 mb-2">Gratuito</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/fortinet.jpg" class="card-img-top" alt="Curso Fortinet">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Fortinet - Fortigate & Fortimanager
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                19 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-secondary fs-6 mb-2">95,00€</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/coudComp.jpg" class="card-img-top" alt="Curso Cloud Computing">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Cloud Computing and Network Administration
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                26 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-success fs-6 mb-2">Gratuito</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/gestorCoord.jpg" class="card-img-top" alt="Gestor / Coordenador de Formação">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Gestor / Coordenador de Formação
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                26 de outubro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-secondary fs-6 mb-2">160,00€</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CURSO 9 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border rounded">
+                        <img src="../Image/tecEspAppInformaticas.jpg" class="card-img-top"
+                            alt="Técnico Especialista em Aplicações Informáticas">
+                        <div class="card-body p-4 d-flex flex-column text-start">
+                            <h5 class="card-title fw-bold fg-primary mb-3">
+                                Técnico Especialista em Aplicações Informáticas
+                            </h5>
+                            <p class="card-text fg-3 mb-1">
+                                2 de novembro de 2026
+                            </p>
+                            <div class="mt-auto pt-3 border-top text-center">
+                                <span class="badge theme-success fs-6 mb-2">Gratuito</span>
+                                <br>
+                                <span class="badge theme-success">Inscrições Abertas</span>
+                                <br>
+                                <a href="../Pages/Inscricao.html"
+                                    class="btn btn-institutional rounded-pill w-100 mt-3">Quero-me inscrever</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer start -->
+        <div class="container-fluid">
+        <footer class="row pt-3 mt-4 border-top justify-content-between">
+            <!-- copy right -->
+            <div class="col-12 md:col-3 text-center align-content-center py-3">
+                <p class="mb-0">Copyright©2026 CESAE. Todos os direitos reservados</p>
+            </div>
+            <div class="col-12 md:col-3 text-center align-content-center py-3">
+                <img src="../Image/cesae-long-white.svg" alt="CESAE Digital Logo" style="height: 40px">
+            </div>
+            <div class="col-12 md:col-3 d-flex md:justify-content-end justify-content-center align-content-center py-3">
+                <ul class="social-media list-unstyled d-flex justify-content-end gap-5 p-0 mb-0">
+                    <li><a href="https://www.instagram.com/cesae.digital/" target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center " title="Instagram"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/CesaeDigital" target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center " title="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@cesaedigital" target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center " title="Youtube"><i
+                                class="bi bi-youtube"></i></a>
+                    </li>
+                    <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center" title="Linkedin"><i
+                                class="bi bi-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Script de drawer para dispositivos móveis -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const drawerToggle = document.querySelector('[data-bs-toggle="drawer"]');
+            const drawerDismiss = document.querySelector('[data-bs-dismiss="drawer"]');
+            const drawer = document.querySelector('#navbarNav');
+
+            if (drawerToggle && drawer) {
+                drawerToggle.addEventListener('click', function () {
+                    if (typeof drawer.showModal === 'function') {
+                        drawer.showModal();
+                    } else {
+                        drawer.setAttribute('open', '');
+                    }
+                });
+            }
+
+            if (drawerDismiss && drawer) {
+                drawerDismiss.addEventListener('click', function () {
+                    if (typeof drawer.close === 'function') {
+                        drawer.close();
+                    } else {
+                        drawer.removeAttribute('open');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
