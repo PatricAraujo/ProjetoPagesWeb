@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="pt-PT">
+<html lang="pt-PT" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Css Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
@@ -10,428 +11,287 @@
       integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
       crossorigin="anonymous"
     />
+
+    <!-- Css pagina (o mesmo da página Contactos; pasta CSS em maiúsculas) -->
+    <link rel="stylesheet" href="../CSS/proposed-style_leo.css" />
+
     <!-- Icons Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <!-- Css pagina -->
-    <link rel="stylesheet" href="./CSS/style.css" />
 
     <title>CESAE - Parceiros</title>
     <link rel="icon" href="./Image/favicon.ico" sizes="any" />
+
+    <!-- Estilos só desta página (carrossel, botão final) -->
+    
   </head>
 
   <body>
     <!-- Top NAV -->
-
-    <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
-      <div class="container-fluid justify-content-between">
-        <a class="navbar-brand" href="../index.html">
-          <img src="/Image/cesae-short.svg" alt="logo-CESAE" />
-        </a>
-        <button
-          class="btn-icon navbar-toggler"
-          type="button"
-          data-bs-toggle="drawer"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Abrir menu"
-        >
-          <i class="bi bi-list"></i>
-        </button>
-        <dialog
-          class="drawer drawer-end flex-grow-1"
-          tabindex="-1"
-          id="navbarNav"
-          aria-labelledby="navbarNavLabel"
-        >
-          <div class="drawer-header">
-            <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="drawer"
-              aria-label="Fechar"
-            ></button>
-          </div>
-          <div
-            class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center"
-          >
-            <ul class="navbar-nav lg:mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Início</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="CursosModulos.html">Cursos</a>
-              </li>
-              <li class="nav-item active">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="Parceiros.html"
-                  >Parceiros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contactos.html">Contactos</a>
-              </li>
-            </ul>
-            <form
-              class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
-              style="max-width: 600px"
-              role="search"
-              action="CursosModulos.html"
-              method="get"
-            >
-              <input
-                class="form-control text-truncate pe-5"
-                type="search"
-                name="q"
-                placeholder="Encontra o Curso que procuras"
-                aria-label="Pesquisar cursos"
-              />
-              <button class="btn-search" type="submit" aria-label="Pesquisar">
-                <i class="bi bi-search" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-        </dialog>
-      </div>
-    </nav>
-
-    <!-- ideia: mapa de lisboa com os parceiros, cada parceiro com um pin no mapa (imagem do parceiro, em vez do pin), ao clicar no pin aparece uma pequena descrição do parceiro e um link para o seu site.
-    Caso o parceiro não tenha locazão física, o pin não aparece no mapa, mas sim uma lista de parceiros sem localização física, com a mesma descrição e link para o site do parceiro. 
-    -->
+  <header>
+        <nav class="navbar lg:navbar-expand bg-1 fg-2 sticky-top d-flex">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Image/cesae-short.svg" alt="logo-CESAE">
+                </a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                    <i class="bi bi-list"></i>
+                </button>
+                <dialog class="drawer drawer-end flex-grow-1" tabindex="-1" id="navbarNav"
+                    aria-labelledby="navbarNavLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Fechar"></button>
+                    </div>
+                    <div class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center">
+ 
+                        <ul class="navbar-nav lg:mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CursosModulos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="Parceiros.html">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contactos.html">Contactos</a>
+                            </li>
+                        </ul>
+                        <form class="position-relative d-flex align-items-center mt-3 lg:mt-0 w-100 lg:w-auto"
+                            style="max-width: 600px;" role="search" action="CursosModulos.html" method="get">
+                            <input class="form-control text-truncate pe-5" type="search" name="q"
+                                placeholder="Encontra o Curso que procuras" aria-label="Pesquisar cursos">
+                            <button class="btn-search" type="submit" aria-label="Pesquisar">
+                                <i class="bi bi-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
+    </header>
 
     <main class="flex-grow-1 d-block">
       <!-- Parceiros -->
-      <!-- <div class="p-5 m-5"> -->
-      <div class="p-3 md:p-5 m-0 md:m-5">
-        <h2>Os nossos Parceiros</h2>
-        <!-- <p class="m-0 p-0 w-100 text-lg-start pb-3"> -->
+    <section class="p-5 m-5" aria-labelledby="parceiros-titulo">
+      <h2 id="parceiros-titulo">Os nossos Parceiros</h2>
         <p class="m-0 p-0 w-100 lg:text-start pb-3">
           Descobre aqui alguns dos nossos parceiros onde poderás fazer parte da
           equipa ou até mesmo voltar e trabalhar connosco!
+          Escolhe e carrega num parceiro para saber mais sobre ele e a sua localização.
         </p>
+    </section>
 
-        <div
-          id="carouselMultiple"
-          class="carousel slide"
-          data-bs-autoplay="true"
-          data-bs-ends="stop"
-          style="--bs-carousel-items: 5; --bs-carousel-items-gap: 1rem"
-        >
-          <div class="d-flex justify-content-between align-items-center">
-            <!-- <h3 class="h5 mb-0">Empresas parceiras</h3> -->
-            <div>
-              <button
-                class="btn-icon btn-sm"
-                type="button"
-                data-bs-target="#carouselMultiple"
-                data-bs-slide="prev"
-                style="--bs-carousel-control-icon-width: 1rem"
-              >
-                <span class="carousel-icon-prev" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button
-                class="btn-icon btn-sm"
-                type="button"
-                data-bs-target="#carouselMultiple"
-                data-bs-slide="next"
-                style="--bs-carousel-control-icon-width: 1rem"
-              >
-                <span class="carousel-icon-next" aria-hidden="true"></span>
-                <span class="visually-hidden">Seguinte</span>
-              </button>
-            </div>
-          </div>
-          <div class="carousel-inner">
+    <!-- Carrossel + card + botão final -->
+    <section class="container-fluid" aria-label="Lista de parceiros">
+      <section class="px-5 mx-5 pb-4" aria-label="Carrossel de parceiros">
+          <div
+            id="carouselMultiple"
+            class="carousel slide"
+            data-bs-autoplay="true"
+            data-bs-ends="loop"
+            data-bs-interval="500"
+            data-bs-wrap="true"          >
+            <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="../Image/Parceiras/001_adecco.svg"
-                class="d-block w-100 rounded-5"
-                alt="Adecco"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="adecco" aria-pressed="true" aria-label="Ver informações de Adecco">
+                <img src="../Image/Parceiras/001_adecco.svg" class="d-block w-100" alt="Adecco" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/007_bosch.svg"
-                class="d-block w-100 rounded-5"
-                alt="Bosch"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="bosch" aria-pressed="false" aria-label="Ver informações de Bosch">
+                <img src="../Image/Parceiras/007_bosch.svg" class="d-block w-100" alt="Bosch" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/008_bpi.svg"
-                class="d-block w-100 rounded-5"
-                alt="BPI"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="bpi" aria-pressed="false" aria-label="Ver informações de BPI">
+                <img src="../Image/Parceiras/008_bpi.svg" class="d-block w-100" alt="BPI" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/012_cin_redimencionado.svg"
-                class="d-block w-100 rounded-5"
-                alt="CIN"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="cin" aria-pressed="false" aria-label="Ver informações de CIN">
+                <img src="../Image/Parceiras/012_cin_redimencionado.svg" class="d-block w-100" alt="CIN" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/016_ctt_cmyk_red.svg"
-                class="d-block w-100 rounded-5"
-                alt="CTT"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="ctt" aria-pressed="false" aria-label="Ver informações de CTT">
+                <img src="../Image/Parceiras/016_ctt_cmyk_red.svg" class="d-block w-100" alt="CTT" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/017_cuf_redimencionado.svg"
-                class="d-block w-100 rounded-5"
-                alt="CUF"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="cuf" aria-pressed="false" aria-label="Ver informações de CUF">
+                <img src="../Image/Parceiras/017_cuf_redimencionado.svg" class="d-block w-100" alt="CUF" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/018_edp_redimencionado.svg"
-                class="d-block w-100 rounded-5"
-                alt="EDP"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="edp" aria-pressed="false" aria-label="Ver informações de EDP">
+                <img src="../Image/Parceiras/018_edp_redimencionado.svg" class="d-block w-100" alt="EDP" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/025_greenvolt.svg"
-                class="d-block w-100 rounded-5"
-                alt="Greenvolt"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="greenvolt" aria-pressed="false" aria-label="Ver informações de Greenvolt">
+                <img src="../Image/Parceiras/025_greenvolt.svg" class="d-block w-100" alt="Greenvolt" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/026_barraqueiro.svg"
-                class="d-block w-100 rounded-5"
-                alt="Grupo Barraqueiro"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="barraqueiro" aria-pressed="false" aria-label="Ver informações de Grupo Barraqueiro">
+                <img src="../Image/Parceiras/026_barraqueiro.svg" class="d-block w-100" alt="Grupo Barraqueiro" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/031_ikea.svg"
-                class="d-block w-100 rounded-5"
-                alt="IKEA"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="ikea" aria-pressed="false" aria-label="Ver informações de IKEA">
+                <img src="../Image/Parceiras/031_ikea.svg" class="d-block w-100" alt="IKEA" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/032_intelcia.svg"
-                class="d-block w-100 rounded-5"
-                alt="Intelcia"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="intelcia" aria-pressed="false" aria-label="Ver informações de Intelcia">
+                <img src="../Image/Parceiras/032_intelcia.svg" class="d-block w-100" alt="Intelcia" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/036_manpower_redimencionado.svg"
-                class="d-block w-100 rounded-5"
-                alt="ManpowerGroup"
-              />
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/042_motaengil_redimencionado.svg"
-                class="d-block w-100 rounded-5"
-                alt="Mota-Engil"
-              />
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/046_prio.svg"
-                class="d-block w-100 rounded-5"
-                alt="PRIO"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="manpower" aria-pressed="false" aria-label="Ver informações de ManpowerGroup">
+                <img src="../Image/Parceiras/036_manpower_redimencionado.svg" class="d-block w-100" alt="ManpowerGroup" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/047_proef.svg"
-                class="d-block w-100 rounded-5"
-                alt="Proef"
-              />
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/054_soc.svg"
-                class="d-block w-100 rounded-5"
-                alt="Soc. Com. C. Santos"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="motaengil" aria-pressed="false" aria-label="Ver informações de Mota-Engil">
+                <img src="../Image/Parceiras/042_motaengil_redimencionado.svg" class="d-block w-100" alt="Mota-Engil" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/055_sogrape.svg"
-                class="d-block w-100 rounded-5"
-                alt="Sogrape"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="prio" aria-pressed="false" aria-label="Ver informações de PRIO">
+                <img src="../Image/Parceiras/046_prio.svg" class="d-block w-100" alt="PRIO" />
+              </button>
             </div>
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/060_sugal.svg"
-                class="d-block w-100 rounded-5"
-                alt="Sugal"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="proef" aria-pressed="false" aria-label="Ver informações de Proef">
+                <img src="../Image/Parceiras/047_proef.svg" class="d-block w-100" alt="Proef" />
+              </button>
             </div>
-
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/067_tre-es60.svg"
-                class="d-block w-100 rounded-5"
-                alt="Três 60"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="soc" aria-pressed="false" aria-label="Ver informações de Soc. Com. C. Santos">
+                <img src="../Image/Parceiras/054_soc.svg" class="d-block w-100" alt="Soc. Com. C. Santos" />
+              </button>
             </div>
-
             <div class="carousel-item">
-              <img
-                src="../Image/Parceiras/070_worten.svg"
-                class="d-block w-100 rounded-5"
-                alt="Worten"
-              />
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="sogrape" aria-pressed="false" aria-label="Ver informações de Sogrape">
+                <img src="../Image/Parceiras/055_sogrape.svg" class="d-block w-100" alt="Sogrape" />
+              </button>
             </div>
-
-            <!-- Logótipos disponíveis mas ainda não ativos (copiar para cima para ativar):
-                    <div class="carousel-item"><img src="../Image/Parceiras/002_amorim.svg" class="d-block w-100 rounded-5" alt="Amorim" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/003_atm.svg" class="d-block w-100 rounded-5" alt="ATM" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/004_ba.svg" class="d-block w-100 rounded-5" alt="BA Glass" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/005_blip_logo.svg" class="d-block w-100 rounded-5" alt="Blip" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/006_bondalti.svg" class="d-block w-100 rounded-5" alt="Bondalti" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/009_cartuxa.svg" class="d-block w-100 rounded-5" alt="Cartuxa" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/010_casais_logo_pack_logotipo_rgb.svg" class="d-block w-100 rounded-5" alt="Casais" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/011_cfpsa.svg" class="d-block w-100 rounded-5" alt="CFPSA" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/013_cme.svg" class="d-block w-100 rounded-5" alt="CME" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/014_cotesi_redimencionado.svg" class="d-block w-100 rounded-5" alt="Cotesi" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/015_clip_redimencionado.svg" class="d-block w-100 rounded-5" alt="CLIP" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/019_logo_corte_ingles.svg" class="d-block w-100 rounded-5" alt="El Corte Inglés" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/020_espora-ao.svg" class="d-block w-100 rounded-5" alt="Esporão" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/021_fidelidade.svg" class="d-block w-100 rounded-5" alt="Fidelidade" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/022_brp-1.svg" class="d-block w-100 rounded-5" alt="Fintru" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/023_forvia.svg" class="d-block w-100 rounded-5" alt="Forvia" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/024_galp.svg" class="d-block w-100 rounded-5" alt="Galp" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/027_grupo-nabeiro.svg" class="d-block w-100 rounded-5" alt="Grupo Nabeiro" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/028_grupo-petrotec.svg" class="d-block w-100 rounded-5" alt="Grupo Petrotec" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/029_grupo-visabeira-2.svg" class="d-block w-100 rounded-5" alt="Grupo Visabeira" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/030_hovione.svg" class="d-block w-100 rounded-5" alt="Hovione" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/033_jap.svg" class="d-block w-100 rounded-5" alt="JAP" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/034_lidl-logo.svg" class="d-block w-100 rounded-5" alt="Lidl" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/035_logotipo_lusiaves.svg" class="d-block w-100 rounded-5" alt="Lusiaves" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/037_mcoutinho.svg" class="d-block w-100 rounded-5" alt="MCoutinho" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/038_sonae.svg" class="d-block w-100 rounded-5" alt="MC Sonae" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/039_meivcore.svg" class="d-block w-100 rounded-5" alt="Meivcore" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/040_meo-1.svg" class="d-block w-100 rounded-5" alt="MEO" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/041_millennium_redimencionado.svg" class="d-block w-100 rounded-5" alt="Millennium bcp" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/043_logo_natixis_black.svg" class="d-block w-100 rounded-5" alt="Natixis" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/044_nors_redimencionado.svg" class="d-block w-100 rounded-5" alt="NORS" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/045_pestana_redimencionado.svg" class="d-block w-100 rounded-5" alt="Pestana" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/048_portoray.svg" class="d-block w-100 rounded-5" alt="Porto Bay" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/049_ren.svg" class="d-block w-100 rounded-5" alt="REN" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/050_salvador-caetano.svg" class="d-block w-100 rounded-5" alt="Salvador Caetano" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/051_santa-casa.svg" class="d-block w-100 rounded-5" alt="Santa Casa da Misericórdia de Lisboa" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/052_santander.svg" class="d-block w-100 rounded-5" alt="Santander" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/053_simoldes.svg" class="d-block w-100 rounded-5" alt="Simoldes" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/061_symington_redimencionado.svg" class="d-block w-100 rounded-5" alt="Symington" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/062_tabaqueira-logo.svg" class="d-block w-100 rounded-5" alt="Tabaqueira" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/063_editory.svg" class="d-block w-100 rounded-5" alt="The Editory" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/064_tdgi_redimencionado.svg" class="d-block w-100 rounded-5" alt="TDGI" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/065_the-fladgate_redimencionado.svg" class="d-block w-100 rounded-5" alt="The Fladgate Partnership" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/066_transdev_redimencionado.svg" class="d-block w-100 rounded-5" alt="Transdev" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/068_vap_redimencionado.svg" class="d-block w-100 rounded-5" alt="VAP" loading="lazy"></div>
-                    <div class="carousel-item"><img src="../Image/Parceiras/069_wondercom.svg" class="d-block w-100 rounded-5" alt="Wondercom" loading="lazy"></div>
-                    -->
+            <div class="carousel-item">
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="sugal" aria-pressed="false" aria-label="Ver informações de Sugal">
+                <img src="../Image/Parceiras/060_sugal.svg" class="d-block w-100" alt="Sugal" />
+              </button>
+            </div>
+            <div class="carousel-item">
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="tres60" aria-pressed="false" aria-label="Ver informações de Três 60">
+                <img src="../Image/Parceiras/067_tre-es60.svg" class="d-block w-100" alt="Três 60" />
+              </button>
+            </div>
+            <div class="carousel-item">
+              <button type="button" class="parceiro-btn border-0 bg-transparent p-0 w-100" data-parceiro="worten" aria-pressed="false" aria-label="Ver informações de Worten">
+                <img src="../Image/Parceiras/070_worten.svg" class="d-block w-100" alt="Worten" />
+              </button>
+            </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Polo de Lisboa -->
-      <div class="container-fluid">
-        <!-- <div class="destaque px-5 mx-5 lg:py-5 py-3"> -->
-        <div class="destaque px-3 md:px-5 mx-0 md:mx-5 lg:py-5 py-3">
+      </section>
+
+
+        <!-- Card do parceiro (começa com a Adecco; muda ao clicar noutro logótipo) -->
+        <section id="polo-painel" class="destaque px-5 mx-5 lg:py-5 py-3">
           <div class="row align-items-center justify-content-center g-9">
-            <div class="col-10 lg:col-5 py-2 d-none md:d-block">
+            <div id="polo-mapa-coluna" class="col-10 lg:col-5 py-2 d-none">
               <iframe
+                id="polo-mapa"
                 class="w-100 rounded-5"
-                style="min-height: 320px"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10472.882992031846!2d-9.175654858103108!3d38.70387669440034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1935285e58e101%3A0xdf62556e80d20581!2sLACS%20Santos!5e0!3m2!1spt-PT!2spt!4v1791220356060!5m2!1spt-PT!2spt"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
-                title="Mapa com a localização do CESAE Lisboa"
+                title="Mapa com a localização do parceiro"
               >
               </iframe>
             </div>
             <div class="col-10 lg:col-3 py-3">
-              <article>
-                <span class="badge bg-secondary fg-accent fs-md mb-3"
-                  >Novo polo</span
+              <article aria-live="polite">
+                <span id="polo-badge" class="badge bg-secondary fg-accent fs-md mb-3 d-none"
+                  >Parceiro</span
                 >
-                <h4>Lisboa</h4>
-                <p class="lisboa-descricao">
-                  Conheça o nosso novo centro de formações.
-                </p>
+                <h4 id="polo-titulo">A carregar…</h4>
+                <p id="polo-descricao" class="lisboa-descricao"></p>
 
-                <div class="polos-dados">
+                <div id="polo-linha-morada" class="polos-dados d-none">
                   <span class="icons" aria-hidden="true"
                     ><i class="bi bi-geo-alt"></i
                   ></span>
                   <div>
                     <p class="small-print">Morada</p>
-                    <p class="polo-info">Av. 24 de Julho 98, 1200-870 Lisboa</p>
+                    <p id="polo-morada" class="polo-info"></p>
                   </div>
                 </div>
-                <div class="polos-dados">
+                <div id="polo-linha-telefone" class="polos-dados d-none">
                   <span class="icons" aria-hidden="true"
                     ><i class="bi bi-telephone-outbound"></i
                   ></span>
                   <div>
                     <p class="small-print">Telefone</p>
-                    <p class="polo-info">
-                      <a href="tel:+351221234567">221 234 567</a> *
-                    </p>
+                    <p id="polo-telefone" class="polo-info"></p>
                   </div>
                 </div>
-                <div class="polos-dados">
+                <div id="polo-linha-email" class="polos-dados d-none">
                   <span class="icons" aria-hidden="true"
                     ><i class="bi bi-envelope-at"></i
                   ></span>
                   <div>
                     <p class="small-print">Email</p>
-                    <p class="polo-info">
-                      <a href="mailto:lisboa@cesae.pt">lisboa@cesae.pt</a>
-                    </p>
+                    <p id="polo-email" class="polo-info"></p>
+                  </div>
+                </div>
+                <div id="polo-linha-site" class="polos-dados d-none">
+                  <span class="icons" aria-hidden="true"
+                    ><i class="bi bi-globe2"></i
+                  ></span>
+                  <div>
+                    <p class="small-print">Website</p>
+                    <p id="polo-site" class="polo-info"></p>
                   </div>
                 </div>
 
                 <a
-                  class="btn-destaque mt-3"
+                  id="polo-direcoes"
+                  class="btn-destaque mt-3 d-none"
                   target="_blank"
-                  rel="noopener"
-                  aria-label="Obter direções para o CESAE Lisboa"
-                  href="https://www.google.com/maps/dir/?api=1&amp;destination=LACS+Santos,+Av.+24+de+Julho+98,+1200-870+Lisboa"
+                  rel="noopener noreferrer"
+                  href="#"
                 >
                   Obter direções <i class="bi bi-map"></i>
                 </a>
               </article>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- <p class="m-0 p-0 w-100 text-lg-start pb-3"> -->
-        <p class="m-0 p-0 w-100 lg:text-start py-3">
+      <!-- Botão para o Pro-Mov todos os parceiros -->
+      <section class="px-5 mx-5 py-5 text-center" aria-label="Todos os parceiros">
+        <a
+          class="btn-todos mx-auto"
+          href="https://pro-mov.pt/#parceiros-fundadores"
+          target="_blank"
+          rel="noopener noreferrer">
           Podes encontrar todos os parceiros aqui!
-        </p>
-      </div>
+          <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+        </a>
+    </section>
+  </section>
 
-      <!-- Linhas com os logos dos parceiros "Parceiros Fundadores", "Parceiros Institucionais". 
-Como "Empresas Parceiras" tem um elevado numero de parceiros, carroussel automatico/manual
-Ao clicar nos logos, atualiza o mapa e informaçoes sobre o parceiro-->
-
-      <!-- Footer (fora do <main>) -->
-
-      <div class="container-fluid">
+  </main>
+      <!-- Footer -->
+      <div class="container-fluid fixed-bottom">
         <footer class="row pt-3 mt-4 d-flex border-top justify-content-between">
           <!-- copy right -->
           <div class="col-12 md:col-3 text-center align-content-center py-3">
@@ -445,8 +305,7 @@ Ao clicar nos logos, atualiza o mapa e informaçoes sobre o parceiro-->
           <div class="col-12 md:col-3 text-center align-content-center py-3">
             <img
               src="../Image/cesae-long-white.svg"
-              alt="CESAE Digital Logo"
-              style="height: 40px"
+              alt="CESAE Digital Logo" class="logo"
             />
           </div>
           <!-- divider -->
@@ -501,13 +360,290 @@ Ao clicar nos logos, atualiza o mapa e informaçoes sobre o parceiro-->
           </div>
         </footer>
       </div>
-    </main>
 
-    <!-- JS Bootstrap -->
+    <!-- JS Bootstrap 6 (é um módulo ES, como na página Contactos) -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Dados dos parceiros + card dinâmico -->
+    <script type="module">
+      import { Carousel } from "https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js";
+
+      const PARCEIROS = {
+  adecco: {
+    nome: "Adecco",
+    descricao: "Empresa de recursos humanos: trabalho temporário, recrutamento e seleção, outsourcing e formação.",
+    morada: "Av. Dom João II, Lote 1.06.2.5, 8º, 1990-095 Lisboa",
+    telefone: "211 156 700",
+    email: "departamento.servico@adecco.com",
+    site: "https://www.adecco.pt",
+    mapa: "Adecco, Av. Dom João II, Lote 1.06.2.5, 1990-095 Lisboa"
+  },
+  bosch: {
+    nome: "Bosch",
+    descricao: "Grupo industrial com atividade em Portugal em tecnologia industrial, de construção e bens de consumo. Tem fábrica de aquecimento de água em Aveiro.",
+    morada: "Av. Infante D. Henrique, Lotes 2E-3E, 1800-220 Lisboa",
+    telefone: "218 500 000",
+    email: "info@pt.bosch.com",
+    site: "https://www.bosch.pt",
+    mapa: "Bosch, Av. Infante D. Henrique Lotes 2E-3E, 1800-220 Lisboa"
+  },
+  bpi: {
+    nome: "BPI",
+    descricao: "Banco universal português, parte do grupo CaixaBank.",
+    morada: "Av. da Boavista, 1117, Porto (sede social)",
+    telefone: "217 207 707",
+    email: "Sem email geral público, usar os canais digitais", 
+    site: "https://www.bancobpi.pt",
+    mapa: "Banco BPI, Av. da Boavista 1117, Porto"
+  },
+  cin: {
+    nome: "CIN",
+    descricao: "Fabricante de tintas e vernizes, líder do mercado ibérico, com sede na Maia.",
+    morada: "Av. de Dom Mendo, 831, 4474-009 Maia",
+    telefone: "229 406 000",
+    email: "customerservice@cin.com",
+    site: "https://cin.com",
+    mapa: "CIN Corporação Industrial do Norte, Av. de Dom Mendo 831, 4474-009 Maia"
+  },
+  ctt: {
+    nome: "CTT",
+    descricao: "Operador postal nacional: correio, encomendas, soluções de e-commerce e serviços financeiros (Banco CTT).",
+    morada: "Av. dos Combatentes, 43, 14º, 1643-001 Lisboa",
+    telefone: "210 471 836",
+    email: "info@ctt.pt",
+    site: "https://www.ctt.pt",
+    mapa: "CTT Correios de Portugal, Av. dos Combatentes 43, 1643-001 Lisboa"
+  },
+  cuf: {
+    nome: "CUF",
+    descricao: "Rede privada de hospitais e clínicas, do grupo José de Mello Saúde.",
+    morada: "Av. do Forte, 3, Edifício Suécia III, 2º, 2790-073 Carnaxide", // sede do grupo
+    telefone: "210 025 100", 
+    email: "investor.relations@cuf.pt", 
+    site: "https://www.cuf.pt",
+    mapa: "José de Mello Saúde, Av. do Forte 3, 2790-073 Carnaxide"
+  },
+  edp: {
+    nome: "EDP",
+    descricao: "Empresa de energia: produção, distribuição e comercialização de eletricidade e gás, com forte aposta em renováveis.",
+    morada: "Av. 24 de Julho, 12, 1249-300 Lisboa",
+    telefone: "213 535 353",
+    email: "info@edp.com", 
+    site: "https://www.edp.com",
+    mapa: "EDP, Av. 24 de Julho 12, 1249-300 Lisboa"
+  },
+  greenvolt: { // morada de documentos de 2021-2023: confirmar se mudou
+    nome: "Greenvolt",
+    descricao: "Empresa de energias renováveis: biomassa, solar e eólica.",
+    morada: "Av. José Malhoa, nº27 3º,1070-157 Lisboa",
+    telefone: "213 307 722", 
+    email: "sede@greenvolt.com",    
+    site: "https://www.greenvolt.com",
+    mapa: "Greenvolt, Av. José Malhoa, nº27 3º, 1070-157 Lisboa"
+  },
+  barraqueiro: {
+    nome: "Grupo Barraqueiro",
+    descricao: "Grupo de transportes de passageiros e mercadorias, que inclui a Fertagus e o Metro Transportes do Sul.",
+    morada: "Campo Grande, 382 C 4º Andar 1700-097 Lisboa",
+    telefone: "261 910 380",
+    email: "barraqueiro@barraqueiro.com",             
+    site: "https://www.barraqueiro.com",
+    mapa: "Barraqueiro Transportes, 1700-097 Lisboa"
+  },
+  ikea: {
+    nome: "IKEA",
+    descricao: "Retalhista sueco de mobiliário e decoração. Em Portugal desde 2004, com lojas em Alfragide, Loures, Loulé, Matosinhos e Braga.",
+    morada: "EN 250, Rua 28 de Setembro, Frielas, 2660-001 Loures",
+    telefone: "219 899 945", 
+    email: "business.support.pt@ikea.com",
+    site: "https://www.ikea.com/pt",
+    mapa: "IKEA Portugal, EN 250 Rua 28 de Setembro, Frielas, 2660-001 Loures"
+  },
+  intelcia: {
+    nome: "Intelcia",
+    descricao: "Empresa de contact center e outsourcing de processos de negócio, com operações em Portugal.",
+    morada: "Centro Empresarial e Comercial 7 Rios, Escritório 1.01, Piso 0, Rua de Campolide 351, 1070-034 Lisboa",
+    telefone: "210 523 928",
+    email: "intelcia.portugal@intelcia.com",
+    site: "https://www.intelcia.com",
+    mapa: "Intelcia, Rua de Campolide 351, 1070-034 Lisboa"
+  },
+  manpower: {
+    nome: "ManpowerGroup",
+    descricao: "Empresa de recrutamento, trabalho temporário e gestão de talento, com as marcas Manpower, Experis e Talent Solutions.",
+    morada: "Torres de Lisboa, Rua Tomás da Fonseca, Torre G, Piso 15, 1600-209 Lisboa",
+    telefone: "300 032 623",
+    email: "info@manpowergroup.pt",    
+    site: "https://www.manpowergroup.pt",
+    mapa: "ManpowerGroup Portugal, Rua Tomás da Fonseca, Torres de Lisboa, 1600-209 Lisboa"
+  },
+  motaengil: {
+    nome: "Mota-Engil",
+    descricao: "Maior grupo português de engenharia e construção, com operações em vários continentes.",
+    morada: "Rua do Rego Lameiro, 38, 4300-454 Porto",
+    telefone: "225 190 190", 
+    email: "info@mota-engil.com",    
+    site: "https://www.mota-engil.com",
+    mapa: "Mota-Engil, Rua do Rego Lameiro 38, 4300-454 Porto"
+  },
+  prio: {
+    nome: "PRIO",
+    descricao: "Maior produtora de biocombustíveis em Portugal, com rede de postos de combustível.",
+    morada: "Terminal de Granéis Líquidos, Lote D, Porto de Aveiro, 3834-908 Gafanha da Nazaré", 
+    telefone: "234 390 010",
+    email: "apoiocliente@prio.pt",
+    site: "https://www.prio.pt",
+    mapa: "PRIO, Terminal de Granéis Líquidos, Porto de Aveiro, 3834-908 Gafanha da Nazaré"
+  },
+  proef: {
+    nome: "Proef",
+    descricao: "Grupo de engenharia que desenvolve soluções integradas chave-na-mão, entre outras áreas em telecomunicações, energia e cidades.",
+    morada: "Rua das Condominhas, 15, 4150-222 Porto",
+    telefone: "224 104 000",
+    email: "info@proef.com", 
+    site: "https://proef.com",
+    mapa: "Proef, Rua das Condominhas 15, 4150-222 Porto"
+  },
+  soc: {
+    nome: "Soc. Com. C. Santos",
+    descricao: "Concessionário Mercedes-Benz e smart, fundado em 1946, com sede na Maia e stands no Porto e em Felgueiras.",
+    morada: "Rua da Estrada, 95, 4470-600 Maia",
+    telefone: "229 400 400",
+    email: "geral@soccsantos.pt",
+    site: "https://www.soccsantos.pt",
+    mapa: "Sociedade Comercial C. Santos, Rua da Estrada 95, 4470-600 Maia"
+  },
+  sogrape: {
+    nome: "Sogrape",
+    descricao: "Grupo vinhateiro português com marcas como Mateus, Sandeman e Casa Ferreirinha.",
+    morada: "Aldeia Nova, Avintes, Vila Nova de Gaia", 
+    telefone: "227 838 104",
+    email: "visitas.seixo@sandeman.com", 
+    site: "https://www.sogrape.com",
+    mapa: "Sogrape Vinhos, Aldeia Nova, Avintes, Vila Nova de Gaia"
+  },
+  sugal: {
+    nome: "Sugal",
+    descricao: "Um dos maiores produtores mundiais de polpa de tomate e puré de fruta, empresa familiar com mais de 60 anos.",
+    morada: "Fonte das Somas, AP6, 2131-901 Benavente",
+    telefone: "263 500 501",
+    email: "info@sugal-group.com", 
+    site: "https://www.sugal-group.com",
+    mapa: "Sugal Group, Fonte das Somas, 2131-901 Benavente"
+  },
+  tres60: {
+    nome: "Três60",
+    descricao: "Grupo de infraestruturas: redes e edifícios, eletricidade, gás, telecomunicações, energias renováveis e formação profissional.",
+    morada: "Travessa de Pitancinhos, nº 28, 4700-007 Braga",
+    telefone: "253 203 510",
+    email: "geral@tres60.pt",
+    site: "https://www.tres60.pt",
+    mapa: "Travessa de Pitancinhos, nº 28, 4700-007 Braga"
+  },
+  worten: {
+    nome: "Worten",
+    descricao: "Retalhista de eletrodomésticos, eletrónica de consumo e tecnologia.",
+    morada: "Lugar do Espido, Via Norte, Edifício 2D, 4470-179 Maia",
+    telefone: "210 155 222", 
+    email: "cliente@worten.pt",              
+    site: "https://www.worten.pt",
+    mapa: "Lugar do Espido, Via Norte, Edifício 2D, 4470-179 Maia"
+  }
+};
+      const $ = (id) => document.getElementById(id);
+      const mostrar = (el, sim) => el.classList.toggle("d-none", !sim);
+
+      // Texto simples
+      function setTexto(el, valor) {
+        el.textContent = "";
+        if (valor && valor.trim()) {
+          el.textContent = valor;
+        } else {
+          const s = document.createElement("span");
+          s.className = "em-falta";
+          el.appendChild(s);
+        }
+      }
+
+
+      // Link (tel:, mailto: ou site)
+      function setLink(el, valor, href) {
+        el.textContent = "";
+        if (valor && valor.trim()) {
+          const a = document.createElement("a");
+          a.href = href;
+          a.textContent = valor;
+          if (href.startsWith("http")) {
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+          }
+          el.appendChild(a);
+        } else {
+          setTexto(el, "");
+        }
+      }
+
+      function mostrarParceiro(chave, rolar) {
+        const p = PARCEIROS[chave];
+        if (!p) return;
+
+        for (const b of document.querySelectorAll(".parceiro-btn")) {
+          b.setAttribute("aria-pressed", String(b.dataset.parceiro === chave));
+        }
+
+        mostrar($("polo-badge"), true);
+        $("polo-titulo").textContent = p.nome;
+        setTexto($("polo-descricao"), p.descricao);
+        setTexto($("polo-morada"), p.morada);
+        setLink($("polo-telefone"), p.telefone, "tel:+351" + (p.telefone || "").replace(/\s/g, ""));
+        setLink($("polo-email"), p.email, "mailto:" + p.email);
+        setLink($("polo-site"), p.site ? p.site.replace(/^https?:\/\/(www\.)?/, "") : "", p.site);
+        for (const l of ["morada", "telefone", "email", "site"]) mostrar($("polo-linha-" + l), true);
+
+        if (p.mapa) {
+          const q = encodeURIComponent(p.mapa);
+          $("polo-mapa").src = "https://www.google.com/maps?q=" + q + "&output=embed";
+          $("polo-mapa").title = "Mapa com a localização de " + p.nome;
+          $("polo-direcoes").href = "https://www.google.com/maps/dir/?api=1&destination=" + q;
+          $("polo-direcoes").setAttribute("aria-label", "Obter direções para " + p.nome);
+          // o mapa só aparece a partir de md (como no polo de Lisboa: d-none md:d-block)
+          $("polo-mapa-coluna").className = "col-10 lg:col-5 py-2 d-none md:d-block";
+          mostrar($("polo-direcoes"), true);
+        } else {
+          $("polo-mapa-coluna").className = "col-10 lg:col-5 py-2 d-none";
+          mostrar($("polo-direcoes"), false);
+        }
+        if (rolar) $("polo-painel").scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      const carrossel = $("carouselMultiple");
+      carrossel.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-parceiro]");
+        if (btn) mostrarParceiro(btn.dataset.parceiro, true);
+      });
+
+      // Ao abrir a página o card já mostra a Adecco (sem precisar de escolher)
+      mostrarParceiro("adecco", false);
+
+      // O Bootstrap 6 desliga o autoplay quando o utilizador clica/arrasta no carrossel.
+      // Aqui volta a ligar: no telemóvel ao largar, no computador quando o rato sai.
+      // Usa o estado interno _playing (Bootstrap 6 alpha): rever se atualizares a versão.
+      // const instancia = Carousel.getOrCreateInstance(carrossel);
+      // function retomarAutoplay() {
+      //   instancia._playing = true;
+      //   instancia.cycle();
+      // }
+      // carrossel.addEventListener("mouseleave", retomarAutoplay);
+      // for (const ev of ["pointerup", "pointercancel"]) {
+      //   carrossel.addEventListener(ev, (e) => {
+      //     if (e.pointerType !== "mouse") setTimeout(retomarAutoplay, 1500);
+      //   });
+      // }
+    </script>
   </body>
 </html>
