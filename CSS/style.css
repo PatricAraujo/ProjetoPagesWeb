@@ -185,3 +185,13 @@ main.container .card-title {
     font-weight: 700 !important;
     color: #1A0B3E !important;
 }
+/* linha dos cards na cor base do site */
+.wireColor
+{
+    width: 100%;
+    height: 2.25px;
+    /* background: #E8008A; */
+    background: linear-gradient(120deg, #382068 0%, #6A1B7E 70%, #B0107F 100%);
+    border-radius: 2px;
+    margin: 0.4rem 0 1.1rem;
+}
