@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="pt-PT" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,16 +10,15 @@
         integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
     <!-- Css pagina -->
-    <link rel="stylesheet" href="../CSS/proposed-style.css">
+    <link rel="stylesheet" href="/CSS/proposed-style.css">
 
     <!-- Icons Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <title> CESAE Digital – Desenvolvimento das Competências Digitais </title>
-    <link rel="icon" href="../Image/favicon.ico" sizes="any">
+    <link rel="icon" href="/Image/favicon.ico" sizes="any">
 
 </head>
-<!-- THIS IS A TEST -->
 
 <body>
     <!-- Navbar -->
@@ -27,7 +26,7 @@
         <nav class="navbar lg:navbar-expand bg-1 fg-2 d-flex">
             <div class="container-fluid justify-content-between">
                 <a class="navbar-brand" href="/index.html">
-                    <img src="/Image/cesae-short.svg" alt="logo-CESAE">
+                    <img src="/Image/cesae-short.svg" alt="logo do CESAE">
                 </a>
                 <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
@@ -42,14 +41,14 @@
                     <div class="drawer-body w-100 d-flex flex-column lg:flex-row lg:align-items-center">
 
                         <ul class="navbar-nav lg:mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Início</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="index.html">Início</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./Pages/CursosModulos.html">Cursos</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="./Pages/Parceiros.html">Parceiros</a>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="./Pages/Parceiros.html">Parceiros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./Pages/Contactos.html">Contactos</a>
@@ -72,7 +71,7 @@
     <main>
         <!-- carousel  -->
         <section id="info-importante">
-            <div id="carouselExampleContent" class="carousel slide my-9 mx-12 carousel slide">
+            <div id="carouselExampleContent" class="carousel slide my-9 mx-12">
                 <div class="carousel-inner rounded-5" data-bs-autoplay="true" data-bs-ends="loop"
                     data-bs-interval="4000" data-bs-wrap="true">
                     <div class="carousel-item card1 active align-content-center">
@@ -85,8 +84,8 @@
                                 <div><a class="btn-destaque" href="/Pages/CursosModulos.html">Encontrar curso</a></div>
                             </div>
                             <div class="hero md:col-6 md:d-flex d-none justify-content-center align-items-center">
-                                <img class="my-9 object-fit-cover" src="Image/digitalspace.png"
-                                    style="aspect-ratio: 16 / 9; object-position: 30% 90%;" alt="">
+                                <img class="my-9 object-fit-cover" src="/Image/digitalspace.png"
+                                    style="aspect-ratio: 16 / 9; object-position: 30% 90%;" alt="Imagem de transformação digital">
                             </div>
                         </div>
                     </div>
@@ -95,21 +94,21 @@
                         <div class="row">
                             <div class="hero md:col-6 md:d-flex d-none justify-content-center align-items-center">
                                 <img class="my-9 object-fit-cover" src="/Image/lisbon.png"
-                                    style="aspect-ratio: 16 / 9; object-position: 50% 90%;" alt="">
+                                    style="aspect-ratio: 16 / 9; object-position: 50% 90%;" alt="Vista aérea de Lisboa">
                             </div>
-                            <div class="d-flex flex-column justify-content-center p-9 rounded-5 col-12 md:col-6 text end"
+                            <div class="d-flex flex-column justify-content-center p-9 rounded-5 col-12 md:col-6"
                                 style="min-height: 320px;">
                                 <h3>O CESAE Digital chega a Lisboa</h3>
                                 <p class="mb-3">Vem conhecer o novo espaço. Tira as tuas dúvidas e
                                     descobre os cursos disponíveis.</p>
-                                <div><a class="btn-destaque" href="/Pages/Contactos.html">Quero saber mais</a></div>
+                                <div><a class="btn-destaque" href="Pages/Contactos.html">Quero saber mais</a></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="carousel-item card3 align-content-center">
                         <div class="row">
-                            <div class="d-flex flex-column justify-content-center p-9 rounded-5 col-12 md:col-6 text end"
+                            <div class="d-flex flex-column justify-content-center p-9 rounded-5 col-12 md:col-6"
                                 style="min-height: 320px;">
                                 <h3>Não sabes por onde começar? Nós ajudamos</h3>
                                 <p class="mb-3">Fala com a nossa equipa e descobre o curso
@@ -119,7 +118,7 @@
                             </div>
                             <div class="hero md:col-6 md:d-flex d-none justify-content-center align-items-center">
                                 <img class="my-9 object-fit-cover" src="/Image/counseling.png"
-                                    style="aspect-ratio: 16 / 9; object-position: 30% 90%;" alt="">
+                                    style="aspect-ratio: 16 / 9; object-position: 30% 90%;" alt="Aconselhamento de Carreira">
                             </div>
                         </div>
                     </div>
@@ -127,15 +126,15 @@
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                            class="active" aria-current="true" aria-label="Conhece o CESAE digital"></button>
                         <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            aria-label="Novo polo em Lisboa"></button>
                         <button type="button" data-bs-target="#carouselExampleContent" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            aria-label="Obtém aconselhamento por onde começar"></button>
                     </div>
                     <button class="btn-icon btn-sm carousel-control-play-pause" type="button"
-                        data-bs-target="#carouselExampleContent" aria-label="Pause" data-bs-pause-label="Pause"
-                        data-bs-play-label="Play">
+                        data-bs-target="#carouselExampleContent" aria-label="Pause" data-bs-pause-label="Pausar"
+                        data-bs-play-label="Reproduzir">
                         <span class="carousel-icon-pause" aria-hidden="true"></span>
                         <span class="carousel-icon-play" aria-hidden="true"></span>
                     </button>
@@ -148,8 +147,8 @@
             <div class="mx-9 my-5">
                 <h2>Áreas de formação</h2>
                 <h4>Escolhe a área que mais se parece contigo.</h4>
-                <p>Os nossos cursos estão divididos em 4 áreas de formação distintas. Carrega naquela que mais se adequa
-                    aquilo que procuras e vê o que temos para te oferecer.</p>
+                <p>Os nossos cursos estão divididos em quatro áreas de formação distintas. Encontra a que mais se adequa
+                    àquilo que procuras e vê o que temos para te oferecer.</p>
             </div>
             <div class="container">
                 <div class="row my-5" id="formacao">
@@ -197,7 +196,7 @@
         “Ligação ao mercado”: cursos pensados para as necessidades das empresas. -->
 
         <!-- testimonies -->
-        <section id="testemunhos" class="container-fluid mt-5 otros-polos">
+        <section id="testemunhos" class="container-fluid mt-5 outros-polos">
             <div class="mx-9 pt-5">
                 <h2>O que dizem sobre nós</h2>
                 <p>Quem passa pelo CESAE não consegue ficar indiferente ao que vive no nosso centro. Sejam formandos,
@@ -210,18 +209,15 @@
                         <div class="testemunho-card">
                             <div class="d-flex align-items-center gap-5">
                                 <img src="https://www.cesaedigital.pt/content/media/9e87de7a-412d-4d9e-9ae5-4222d6876998.jpg"
-                                    class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width:100px;"
-                                    loading="lazy" alt="...">
+                                    class="card-img object-fit-cover"
+                                    loading="lazy" alt="Fotografia da empresa parceira a dar o testemunho">
                                 <div>
                                     <h5 class="mt-2 mb-0">João Azevedo</h5>
                                     <h6>180 Consulting - CFO</h6>
                                 </div>
                             </div>
                             <div class="polos-div"></div>
-                            <p class="mb-5 testemunho">“Quem passa pelo CESAE não consegue ficar
-                                indiferente ao que vive no nosso centro.
-                                Sejam formandos, formadores ou empresas, todos têm uma palavra a dizer sobre a sua
-                                experiência.”</p>
+                            <p class="mb-5 testemunho">“A parceria com o CESAE Digital tem sido uma mais-valia para a 180 Consulting. Através da Formação Prática em Contexto de Trabalho, tivemos a oportunidade de acolher formandos motivados e bem preparados, cujo contributo tem impactado positivamente o nosso dia a dia. Esta colaboração tem-nos permitido não só apoiar o desenvolvimento de novos profissionais, mas também enriquecer a nossa equipa com novas perspetivas e ideias.”</p>
                         </div>
                     </div>
 
@@ -229,8 +225,8 @@
                         <div class="testemunho-card">
                             <div class="d-flex align-items-center gap-5">
                                 <img src="https://www.cesaedigital.pt/content/media/27222338-0014-4a24-adc1-5b5d854543b0.jpeg"
-                                    class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width:100px;"
-                                    loading="lazy" alt="...">
+                                    class="card-img object-fit-cover" 
+                                    loading="lazy" alt="Fotografia da pessoa a dar o testemunho">
                                 <div>
                                     <h5 class="mt-2 mb-0">Sara Monteiro</h5>
                                     <h6>Formadora - Programação</h6>
@@ -238,15 +234,15 @@
                             </div>
                             <div class="polos-div"></div>
 
-                            <p class=" mb-5 testemunho">“Fui aluna do Cesae há 5 anos e há dois formadora desta
+                            <p class=" mb-5 testemunho">“Fui aluna do CESAE há 5 anos e há dois formadora desta
                                 casa. O
-                                Cesae mudou a minha vida do ponto de vista de utilizadora. Por isso, sempre que
+                                CESAE mudou a minha vida do ponto de vista de utilizadora. Por isso, sempre que
                                 acolho
                                 uma
                                 nova turma encaro o desafio como uma oportunidade de devolver e semear outros
                                 processos como o meu. O mais prazeroso em dar formação é ver nascer o brilho no
                                 olhar dos nossos formandos, vê-los florescer em capacidades técnicas e pessoais.
-                                Os alunos do cesae são empenhados e motivados, e isso torna o processo de
+                                Os alunos do CESAE são empenhados e motivados, e isso torna o processo de
                                 ensiná-los mais fácil.”</p>
                         </div>
                     </div>
@@ -255,8 +251,8 @@
                         <div class="testemunho-card">
                             <div class="d-flex align-items-center gap-5">
                                 <img src="https://www.cesaedigital.pt/content/media/77e90c76-a939-4ef1-b998-3c9c38227db2.jpeg"
-                                    class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width:100px"
-                                    loading="lazy" alt="...">
+                                    class="card-img object-fit-cover"
+                                    loading="lazy" alt="Fotografia da pessoa a dar o testemunho">
                                 <div>
                                     <h5 class="mt-2 mb-0">Ricardo Moisés Moreira</h5>
                                     <h6>Formador - Programação</h6>
@@ -271,7 +267,7 @@
                                 que se vive em cada sessão. O compromisso com a qualidade da formação e a
                                 valorização
                                 dos formadores fazem toda a diferença. Sinto-me valorizado e integrado numa equipa
-                                dedicada à excelência na formação. ”</p>
+                                dedicada à excelência na formação.”</p>
                         </div>
                     </div>
 
@@ -279,8 +275,8 @@
                         <div class="testemunho-card">
                             <div class="d-flex align-items-center gap-5">
                                 <img src="https://www.cesaedigital.pt/content/media/93f65c98-1396-46a0-9af5-39eb4464f1d9.jpg"
-                                    class="card-img object-fit-cover" style="aspect-ratio: 4/3; max-width:100px"
-                                    loading="lazy" alt="...">
+                                    class="card-img object-fit-cover"
+                                    loading="lazy" alt="Fotografia da pessoa a dar o testemunho">
                                 <div>
                                     <h5 class="mt-2 mb-0">Ana Rocha</h5>
                                     <h6>Formanda - Processo RVCC Escolar-NS</h6>
@@ -306,25 +302,25 @@
         <footer class="row pt-3 border-top justify-content-between">
             <!-- copy right -->
             <div class="col-12 md:col-3 text-center align-content-center py-3">
-                <p class="mb-0">Copyright©2025 CESAE. Todos os direitos reservados</p>
+                <p class="mb-0">Copyright © 2026 CESAE. Todos os direitos reservados</p>
             </div>
             <div class="col-12 md:col-3 text-center align-content-center py-3">
-                <img src="../Image/cesae-long-white.svg" alt="CESAE Digital Logo" style="height: 40px">
+                <img src="/Image/cesae-long-white.svg" alt="CESAE Digital Logo" style="height: 40px">
             </div>
             <div class="col-12 md:col-3 d-flex md:justify-content-end justify-content-center align-content-center py-3">
                 <ul class="social-media list-unstyled d-flex justify-content-end gap-5 p-0 mb-0">
-                    <li><a href="https://www.instagram.com/cesae.digital/" target="_blank"
+                    <li><a href="https://www.instagram.com/cesae.digital/" target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center " title="Instagram"><i
                                 class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/CesaeDigital" target="_blank"
+                    <li><a href="https://www.facebook.com/CesaeDigital" target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center " title="Facebook"><i
                                 class="bi bi-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.youtube.com/@cesaedigital" target="_blank"
+                    <li><a href="https://www.youtube.com/@cesaedigital" target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center " title="Youtube"><i
                                 class="bi bi-youtube"></i></a>
                     </li>
-                    <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank"
+                    <li><a href="https://pt.linkedin.com/school/cesae-digital/" target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center" title="Linkedin"><i
                                 class="bi bi-linkedin"></i></a>
                     </li>

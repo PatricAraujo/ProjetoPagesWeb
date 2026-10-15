@@ -76,7 +76,6 @@ h6 {
     font-size: 75%;
     letter-spacing: 1px;
     margin: 0 0 1px;
-    opacity: 70%;
 }
 
 /* -----------------------------------NAV BAR----------------------------------- */
@@ -102,11 +101,6 @@ nav {
     color: #92127B;
 }
 
-.barra-pesquisa {
-    border: 1px #E4DFF0 solid;
-    border-radius: 50%;
-}
-
 /* -----------------------------------DESTAQUE----------------------------------- */
 
 /* background gradiente com cores da marca e texto branco */
@@ -128,11 +122,16 @@ nav {
     color: white;
 }
 
+.destaque .polo-info a {
+    color: white;
+    text-decoration: 0.7px underline #B9B3CC;
+    text-underline-offset: 3px;
+}
+
 /* cor dos links quando se faz hover dentro do destaque gradiente */
 .destaque .polo-info a:hover {
     color: #B9B3CC;
     text-decoration: 0.7px underline #B9B3CC;
-    text-decoration: 1px underline #B9B3CC;
     text-underline-offset: 3px;
 }
 
@@ -155,14 +154,6 @@ nav {
     color: #382068;
 }
 
-/* background gradiente com cores da marca e texto branco */
-.destaque .polo-info a {
-    color: #fff;
-    text-decoration: none;
-    text-decoration: 1px underline #B9B3CC;
-    text-underline-offset: 3px;
-}
-
 .lisboa-descricao {
     font-size: 1.1rem;
     font-weight: 500;
@@ -171,7 +162,7 @@ nav {
 
 /* -----------------------------------POLOS----------------------------------- */
 /* background seccção polos */
-.otros-polos {
+.outros-polos {
     background-color: #E4DFF0;
 }
 
@@ -214,7 +205,7 @@ nav {
 
 /* cor dos links por default */
 body a {
-    color: #0B7BC0;
+    color: #0A7BC2;
 }
 
 
@@ -436,13 +427,6 @@ form select,
     border-radius: 8px;
 }
 
-.sucesso-msg {
-    display: none;
-}
-
-.sucesso-msg:target {
-    display: block;
-}
 /* Desktop: tudo na mesma linha */
 
 @media (min-width: 992px) {
@@ -450,12 +434,6 @@ form select,
         flex-grow: 1;
         width: auto;
         max-width: none;
-    }
-
-    .barra-pesquisa {
-        flex-grow: 1;
-        border: 1px #E4DFF0 solid;
-        border-radius: 50%;
     }
 }
 
@@ -505,4 +483,9 @@ img{
     background-color: #7850b830;
     border-radius: 10px;
     padding: 10px;
+}
+
+.card-img {
+    aspect-ratio: 4 / 3;
+    max-width:100px;
 }
