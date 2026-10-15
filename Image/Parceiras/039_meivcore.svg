@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" version="1.1" viewBox="0 0 842 596">
+  
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        mask: url(#mask);
+      }
+
+      .st2 {
+        fill: #3c3e42;
+      }
+
+      .st3 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st4 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st5 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st6 {
+        fill: url(#linear-gradient5);
+      }
+
+      .st7 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st8 {
+        fill: #1f2023;
+      }
+
+      .st9 {
+        fill: #3e4143;
+      }
+
+      .st10 {
+        fill: url(#linear-gradient);
+      }
+
+      .st11 {
+        mask: url(#mask-2);
+      }
+
+      .st12 {
+        mask: url(#mask-3);
+      }
+
+      .st13 {
+        mask: url(#mask-4);
+      }
+
+      .st14 {
+        mask: url(#mask-5);
+      }
+
+      .st15 {
+        mask: url(#mask-7);
+      }
+
+      .st16 {
+        mask: url(#mask-6);
+      }
+
+      .st17 {
+        mask: url(#mask-1);
+      }
+
+      .st18 {
+        mask: url(#mask-9);
+      }
+
+      .st19 {
+        mask: url(#mask-8);
+      }
+
+      .st20 {
+        fill: #ce202f;
+      }
+
+      .st21 {
+        fill: #fff;
+      }
+
+      .st22 {
+        opacity: .8;
+      }
+
+      .st23 {
+        opacity: .4;
+      }
+
+      .st24 {
+        opacity: .5;
+      }
+
+      .st25 {
+        opacity: .2;
+      }
+
+      .st26 {
+        opacity: .3;
+      }
+
+      .st27 {
+        opacity: .1;
+      }
+
+      .st28 {
+        fill: #404346;
+      }
+
+      .st29 {
+        mask: url(#mask-41);
+      }
+
+      .st30 {
+        mask: url(#mask-31);
+      }
+
+      .st31 {
+        mask: url(#mask-35);
+      }
+
+      .st32 {
+        mask: url(#mask-30);
+      }
+
+      .st33 {
+        mask: url(#mask-34);
+      }
+
+      .st34 {
+        mask: url(#mask-33);
+      }
+
+      .st35 {
+        mask: url(#mask-44);
+      }
+
+      .st36 {
+        mask: url(#mask-43);
+      }
+
+      .st37 {
+        mask: url(#mask-40);
+      }
+
+      .st38 {
+        mask: url(#mask-46);
+      }
+
+      .st39 {
+        mask: url(#mask-45);
+      }
+
+      .st40 {
+        mask: url(#mask-42);
+      }
+
+      .st41 {
+        mask: url(#mask-32);
+      }
+
+      .st42 {
+        mask: url(#mask-10);
+      }
+
+      .st43 {
+        mask: url(#mask-14);
+      }
+
+      .st44 {
+        mask: url(#mask-18);
+      }
+
+      .st45 {
+        mask: url(#mask-11);
+      }
+
+      .st46 {
+        mask: url(#mask-16);
+      }
+
+      .st47 {
+        mask: url(#mask-13);
+      }
+
+      .st48 {
+        mask: url(#mask-19);
+      }
+
+      .st49 {
+        mask: url(#mask-12);
+      }
+
+      .st50 {
+        mask: url(#mask-17);
+      }
+
+      .st51 {
+        mask: url(#mask-15);
+      }
+
+      .st52 {
+        mask: url(#mask-22);
+      }
+
+      .st53 {
+        mask: url(#mask-21);
+      }
+
+      .st54 {
+        mask: url(#mask-20);
+      }
+
+      .st55 {
+        mask: url(#mask-36);
+      }
+
+      .st56 {
+        mask: url(#mask-25);
+      }
+
+      .st57 {
+        mask: url(#mask-24);
+      }
+
+      .st58 {
+        mask: url(#mask-23);
+      }
+
+      .st59 {
+        mask: url(#mask-39);
+      }
+
+      .st60 {
+        mask: url(#mask-38);
+      }
+
+      .st61 {
+        mask: url(#mask-37);
+      }
+
+      .st62 {
+        mask: url(#mask-28);
+      }
+
+      .st63 {
+        mask: url(#mask-29);
+      }
+
+      .st64 {
+        mask: url(#mask-26);
+      }
+
+      .st65 {
+        mask: url(#mask-27);
+      }
+
+      .st66 {
+        fill: #83878b;
+      }
+
+      .st67 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="172" y="152" width="498" height="291"/>
+    </clipPath>
+    <mask id="mask" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask0_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-1" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask1_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-2" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask2_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-3" x="383.5" y="145.3" width="117.6" height="123.3" maskUnits="userSpaceOnUse">
+      <g id="mask3_4_962">
+        <path class="st21" d="M421,163.9v43.1l42.6,43.1-42.6-86.2Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="397.9" y1="416.9" x2="477.9" y2="370.3" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#767b7e"/>
+      <stop offset=".5" stop-color="#7b8083"/>
+      <stop offset=".7" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-4" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask4_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-5" x="340" y="144.8" width="119.4" height="124.2" maskUnits="userSpaceOnUse">
+      <g id="mask5_4_962">
+        <path class="st21" d="M378.4,250l42.6-43.1v-43.1l-42.6,86.2Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient1" x1="394.9" y1="394" x2="436.9" y2="368.2" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".8" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-6" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask6_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-7" x="384.8" y="158.2" width="43.5" height="78.9" maskUnits="userSpaceOnUse">
+      <g id="mask7_4_962">
+        <path class="st21" d="M428.3,158.2h-43.5v78.9h43.5v-78.9Z"/>
+      </g>
+    </mask>
+    <mask id="mask-8" x="384.8" y="158.2" width="43.5" height="78.9" maskUnits="userSpaceOnUse">
+      <g id="mask8_4_962">
+        <path class="st21" d="M428.3,158.2h-43.5v78.9h43.5v-78.9Z"/>
+      </g>
+    </mask>
+    <mask id="mask-9" x="413.7" y="158.2" width="43.5" height="78.9" maskUnits="userSpaceOnUse">
+      <g id="mask9_4_962">
+        <path class="st21" d="M457.2,158.2h-43.5v78.9h43.5v-78.9Z"/>
+      </g>
+    </mask>
+    <mask id="mask-10" x="413.7" y="158.2" width="43.5" height="78.9" maskUnits="userSpaceOnUse">
+      <g id="mask10_4_962">
+        <path class="st21" d="M457.2,158.2h-43.5v78.9h43.5v-78.9Z"/>
+      </g>
+    </mask>
+    <mask id="mask-11" x="371.1" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask11_4_962">
+        <path class="st21" d="M428.3,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-12" x="371.1" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask12_4_962">
+        <path class="st21" d="M428.3,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-13" x="413.7" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask13_4_962">
+        <path class="st21" d="M470.9,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-14" x="413.7" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask14_4_962">
+        <path class="st21" d="M470.9,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-15" x="371.1" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask15_4_962">
+        <path class="st21" d="M428.3,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-16" x="371.1" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask16_4_962">
+        <path class="st21" d="M428.3,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-17" x="413.7" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask17_4_962">
+        <path class="st21" d="M470.9,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-18" x="413.7" y="158.2" width="57.2" height="92.7" maskUnits="userSpaceOnUse">
+      <g id="mask18_4_962">
+        <path class="st21" d="M470.9,158.2h-57.2v92.7h57.2v-92.7Z"/>
+      </g>
+    </mask>
+    <mask id="mask-19" x="287.6" y="225.1" width="128.2" height="130.1" maskUnits="userSpaceOnUse">
+      <g id="mask19_4_962">
+        <path class="st21" d="M325.1,330.4l37.3-21.7,16-58.6-53.2,80.3Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient2" x1="351.6" y1="307.9" x2="384.1" y2="285.5" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".8" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-20" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask20_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-21" x="322.5" y="297.7" width="99.2" height="44.3" maskUnits="userSpaceOnUse">
+      <g id="mask21_4_962">
+        <path class="st21" d="M360.4,309.8l-35.3,20.5,94-6.3v-.6c0,0-54.4-14.2-54.4-14.2l-4.3.5Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient3" x1="374.3" y1="260.9" x2="370.9" y2="288.2" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#767b7e"/>
+      <stop offset=".5" stop-color="#7b8083"/>
+      <stop offset=".7" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-22" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask22_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-23" x="316.6" y="287.3" width="90" height="77.3" maskUnits="userSpaceOnUse">
+      <g id="mask23_4_962">
+        <path class="st21" d="M406.6,287.3h-90v77.3h90v-77.3Z"/>
+      </g>
+    </mask>
+    <mask id="mask-24" x="316.6" y="287.3" width="90" height="77.3" maskUnits="userSpaceOnUse">
+      <g id="mask24_4_962">
+        <path class="st21" d="M406.6,287.3h-90v77.3h90v-77.3Z"/>
+      </g>
+    </mask>
+    <mask id="mask-25" x="316.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask25_4_962">
+        <path class="st21" d="M425.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-26" x="316.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask26_4_962">
+        <path class="st21" d="M425.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-27" x="316.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask27_4_962">
+        <path class="st21" d="M425.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-28" x="316.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask28_4_962">
+        <path class="st21" d="M425.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-29" x="302.6" y="253" width="94.2" height="80" maskUnits="userSpaceOnUse">
+      <g id="mask29_4_962">
+        <path class="st21" d="M396.9,253h-94.2v80h94.2v-80Z"/>
+      </g>
+    </mask>
+    <mask id="mask-30" x="302.6" y="253" width="94.2" height="80" maskUnits="userSpaceOnUse">
+      <g id="mask30_4_962">
+        <path class="st21" d="M396.9,253h-94.2v80h94.2v-80Z"/>
+      </g>
+    </mask>
+    <mask id="mask-31" x="425.5" y="224.7" width="129.5" height="130.9" maskUnits="userSpaceOnUse">
+      <g id="mask31_4_962">
+        <path class="st21" d="M463.6,250l16,58.6,37.3,21.7-53.2-80.3Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient4" x1="453.7" y1="334.2" x2="528.4" y2="280.2" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".8" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-32" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask32_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-33" x="420.8" y="305.9" width="97.2" height="27.3" maskUnits="userSpaceOnUse">
+      <g id="mask33_4_962">
+        <path class="st21" d="M421,324l95.9,6.4-37.3-21.7-58.6,15.3Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient5" x1="468.6" y1="254.2" x2="469.7" y2="289.7" gradientTransform="translate(0 598) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".3" stop-color="#767b7e"/>
+      <stop offset=".5" stop-color="#7b8083"/>
+      <stop offset=".7" stop-color="#45484b"/>
+      <stop offset="1" stop-color="#1f2023"/>
+    </linearGradient>
+    <mask id="mask-34" x="-149.5" y="51.1" width="1142.4" height="490.4" maskUnits="userSpaceOnUse">
+      <g id="mask34_4_962">
+        <path class="st21" d="M992.8,51.1H-149.5v490.4H992.8V51.1Z"/>
+      </g>
+    </mask>
+    <mask id="mask-35" x="435.4" y="287.3" width="90" height="77.3" maskUnits="userSpaceOnUse">
+      <g id="mask35_4_962">
+        <path class="st21" d="M525.4,287.3h-90v77.3h90v-77.3Z"/>
+      </g>
+    </mask>
+    <mask id="mask-36" x="435.4" y="287.3" width="90" height="77.3" maskUnits="userSpaceOnUse">
+      <g id="mask36_4_962">
+        <path class="st21" d="M525.4,287.3h-90v77.3h90v-77.3Z"/>
+      </g>
+    </mask>
+    <mask id="mask-37" x="416.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask37_4_962">
+        <path class="st21" d="M525.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-38" x="416.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask38_4_962">
+        <path class="st21" d="M525.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-39" x="416.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask39_4_962">
+        <path class="st21" d="M525.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-40" x="416.6" y="280.4" width="108.8" height="96" maskUnits="userSpaceOnUse">
+      <g id="mask40_4_962">
+        <path class="st21" d="M525.4,280.4h-108.8v96h108.8v-96Z"/>
+      </g>
+    </mask>
+    <mask id="mask-41" x="311.3" y="253" width="84.9" height="75.4" maskUnits="userSpaceOnUse">
+      <g id="mask41_4_962">
+        <path class="st21" d="M396.2,253h-84.9v75.4h84.9v-75.4Z"/>
+      </g>
+    </mask>
+    <mask id="mask-42" x="311.3" y="253" width="84.9" height="75.4" maskUnits="userSpaceOnUse">
+      <g id="mask42_4_962">
+        <path class="st21" d="M396.2,253h-84.9v75.4h84.9v-75.4Z"/>
+      </g>
+    </mask>
+    <mask id="mask-43" x="445.2" y="253" width="94.2" height="80" maskUnits="userSpaceOnUse">
+      <g id="mask43_4_962">
+        <path class="st21" d="M539.4,253h-94.2v80h94.2v-80Z"/>
+      </g>
+    </mask>
+    <mask id="mask-44" x="445.2" y="253" width="94.2" height="80" maskUnits="userSpaceOnUse">
+      <g id="mask44_4_962">
+        <path class="st21" d="M539.4,253h-94.2v80h94.2v-80Z"/>
+      </g>
+    </mask>
+    <mask id="mask-45" x="445.8" y="253" width="84.9" height="75.4" maskUnits="userSpaceOnUse">
+      <g id="mask45_4_962">
+        <path class="st21" d="M530.7,253h-84.9v75.4h84.9v-75.4Z"/>
+      </g>
+    </mask>
+    <mask id="mask-46" x="445.8" y="253" width="84.9" height="75.4" maskUnits="userSpaceOnUse">
+      <g id="mask46_4_962">
+        <path class="st21" d="M530.7,253h-84.9v75.4h84.9v-75.4Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="st67">
+    <g class="st1">
+      <g class="st17">
+        <g>
+          <g class="st11">
+            <g>
+              <path class="st20" d="M663.2,390.5h-35.5v-33.5h35.5v-9h-44.4v51.5h44.4v-9ZM660.9,368.9h-29.4v9h29.4v-9ZM595,384c4-.9,7.5-3.1,10.2-6.1,2.7-3.1,4.1-7.1,4.1-11.1,0-6.3-2.3-11.1-7-14.4-4.1-2.9-9.4-4.3-16-4.3h-36.9v51.5h8.9v-42.5h29.4c8.1,0,12.2,3.2,12.2,9.6,0,1.4-.3,2.9-.9,4.2-.7,1.3-1.7,2.4-2.9,3.1-2.5,1.5-5.4,2.3-8.4,2.2h-24.1v9h19.4l14.4,14.5h13.3l-15.6-15.6ZM529.2,385.9c-1.6,1.5-3.6,2.7-5.7,3.5-2.1.8-4.3,1.2-6.6,1.1h-14.4c-2.2,0-4.5-.3-6.5-1.1-2.1-.8-4-2-5.6-3.5-1.6-1.5-2.8-3.4-3.7-5.5-.8-2.1-1.2-4.3-1.1-6.5,0-2.3.3-4.5,1.1-6.6.8-2.1,2.1-4,3.7-5.6,1.6-1.6,3.5-2.8,5.6-3.7,2.1-.8,4.3-1.2,6.6-1.1h14.4c2.3,0,4.5.3,6.6,1.1,2.1.8,4,2.1,5.6,3.6,1.6,1.6,2.8,3.5,3.7,5.6.8,2.1,1.2,4.3,1.1,6.6,0,2.2-.3,4.4-1.1,6.5-.8,2.1-2.1,3.9-3.7,5.5ZM535.6,355c-4.8-4.6-11-6.9-18.7-6.9h-14.4c-3.4-.1-6.8.4-10,1.6-3.2,1.2-6.1,3-8.6,5.3-4.8,4.6-7.3,10.7-7.3,18.2-.1,3.5.5,6.9,1.7,10.2,1.3,3.2,3.2,6.2,5.6,8.7,2.4,2.5,5.3,4.4,8.5,5.7,3.2,1.3,6.6,1.9,10.1,1.8h14.4c3.4.1,6.9-.5,10.1-1.8,3.2-1.3,6.1-3.2,8.5-5.7,2.4-2.5,4.3-5.4,5.6-8.7,1.3-3.2,1.8-6.7,1.7-10.2,0-7.5-2.4-13.6-7.2-18.2ZM469.4,390.5h-29c-2.2,0-4.5-.3-6.5-1.1-2.1-.8-4-2-5.6-3.5-1.6-1.5-2.8-3.4-3.6-5.5-.8-2.1-1.2-4.3-1.1-6.5,0-2.3.3-4.5,1.1-6.6.8-2.1,2.1-4,3.7-5.6,1.6-1.6,3.5-2.8,5.6-3.7,2.1-.8,4.3-1.2,6.6-1.1h29.1v-9h-29.1c-3.4-.1-6.8.4-10,1.6-3.2,1.2-6.1,3-8.6,5.3-4.8,4.6-7.3,10.7-7.3,18.2-.1,3.5.5,6.9,1.7,10.2,1.3,3.2,3.2,6.2,5.6,8.7,2.4,2.5,5.3,4.4,8.5,5.7,3.2,1.3,6.6,1.9,10.1,1.8h29.1v-9Z"/>
+              <path class="st2" d="M399.7,348l-23.2,38.3-23-38.2h-11.5l28.8,47.2c2,3.4,3.9,5,5.5,5s3.5-1.7,5.6-5l29.4-47.2h-11.5ZM334.1,348h-8.9v51.5h8.9v-51.5ZM313.8,390.5h-35.5v-33.5h35.5v-9h-44.4v51.5h44.4v-9ZM311.4,368.9h-29.4v9h29.4v-9ZM248.3,352.3c-.3-1.3-1-2.5-2-3.5-.9-1-2.2-1.5-3.6-1.6-2,0-3.8,1.7-5.6,5.1l-17.2,33.7-17.2-33.7c-1.8-3.4-3.6-5.1-5.6-5.1-.7,0-1.3.1-1.9.4-.6.3-1.2.6-1.6,1.1-1,1-1.7,2.2-2,3.6l-11.5,47.3h10.2l7.4-36,17.3,33.2c.4,1,1.2,1.9,2.1,2.5.9.6,2,.9,3.2.9,1.1,0,2.1-.4,2.9-1s1.5-1.5,1.9-2.5l17.3-33.2,7.5,36h10.1l-11.5-47.2Z"/>
+              <path class="st2" d="M506.8,417.3l-6,8.3-6.4-8.3h-3.8l8.6,11.3v5.6h3v-5.6l8.4-11.3h-3.9ZM480.6,429.1c1.3-.3,2.5-1,3.4-2,.5-.6.9-1.3,1.1-2.1.2-.8.3-1.6.2-2.3,0-.8-.3-1.5-.7-2.2-.4-.7-.9-1.3-1.5-1.8-1.6-1-3.4-1.5-5.3-1.4h-12.1v16.9h3v-14h9.7c2.7,0,4,1.1,4,3.2,0,.5,0,.9-.3,1.4s-.5.8-.9,1c-.8.5-1.8.8-2.7.7h-8v2.9h6.4l4.7,4.8h4.4l-5.1-5.1ZM460.1,417.3h-16.3v3h6.7v14h3v-14h6.6v-3ZM436.9,425.1c-1.1-1-2.6-1.5-4.1-1.4h-8c-.5,0-1.1-.1-1.5-.4-.2-.1-.4-.3-.5-.6-.1-.2-.2-.5-.1-.7,0-.2,0-.5.1-.7.1-.2.3-.4.5-.6.4-.3,1-.5,1.5-.5h12.7v-3h-12.7c-1.3,0-2.6.4-3.7,1.2-.5.4-.9,1-1.2,1.6-.3.6-.4,1.2-.4,1.9s.1,1.3.4,1.9c.3.6.7,1.1,1.2,1.6,1,.8,2.4,1.3,3.7,1.2h8c.7,0,1.4.2,2.1.5.3.2.6.4.8.7.2.3.3.7.3,1,0,.4,0,.7-.3,1-.2.3-.4.6-.7.8-.6.4-1.4.6-2.1.5h-12.9v3h12.9c1.5,0,2.9-.4,4.1-1.4.6-.5,1-1.1,1.3-1.7s.4-1.4.4-2.1c0-.7-.1-1.5-.4-2.1-.3-.7-.7-1.3-1.3-1.8M413.2,417.3h-3v9.3c0,.7,0,1.5-.3,2.1-.3.7-.8,1.2-1.3,1.7-1.3.7-2.8,1-4.2.9-1.6.1-3.3-.1-4.8-.6-.7-.4-1.3-1-1.7-1.7-.4-.7-.5-1.5-.4-2.3v-9.3h-3v9.3c0,1.1,0,2.2.5,3.3s1.1,2,1.9,2.7c1.9,1.2,4.1,1.8,6.4,1.6h1c2.2.2,4.5-.4,6.4-1.6.9-.7,1.5-1.6,1.9-2.7.4-1,.6-2.2.5-3.3v-9.3ZM383.5,429.7c-.5.5-1.2.9-1.8,1.2-.7.3-1.4.4-2.1.3h-6.6v-11h6.6c.7,0,1.5,0,2.2.3.7.3,1.3.7,1.8,1.2.5.5.9,1.1,1.2,1.8.3.7.4,1.4.4,2.2,0,.7,0,1.5-.4,2.1-.3.7-.7,1.3-1.2,1.8M385.7,419.5c-1.7-1.5-3.9-2.4-6.1-2.3h-9.5v17h9.5c1.1,0,2.3-.2,3.3-.6,1.1-.4,2-1.1,2.8-1.9.8-.8,1.4-1.8,1.8-2.9.4-1.1.6-2.2.6-3.3,0-1.1-.1-2.2-.6-3.2-.4-1-1-2-1.8-2.7M361.6,417.3h-3v11.7l-10.7-10.9c-.2-.2-.5-.5-.8-.6-.3-.1-.6-.2-.9-.3-.2,0-.4,0-.5.1-.2,0-.3.2-.4.3-.2.3-.3.7-.3,1v15.4h3v-11.7l10.8,10.9c.5.6,1.1.9,1.8,1,.7,0,1.1-.6,1.1-1.6v-15.4ZM337,417.3h-3v16.9h3v-16.9Z"/>
+              <path class="st2" d="M421,163.9v43.1l42.6,43.1-42.6-86.2Z"/>
+            </g>
+          </g>
+          <g class="st12">
+            <path class="st10" d="M431.8,145.3l-48.3,82.9,69.3,40.4,48.3-82.9-69.3-40.4Z"/>
+          </g>
+          <g class="st13">
+            <path class="st8" d="M421,163.9l-42.6,86.2,42.6-43.1v-43.1Z"/>
+          </g>
+          <g class="st14">
+            <path class="st4" d="M390,144.8l-50,81.7,69.4,42.5,50-81.7-69.4-42.5Z"/>
+          </g>
+          <g class="st16">
+            <g>
+              <g class="st24">
+                <g class="st15">
+                  <g class="st19">
+                    <path class="st21" d="M421,163.9v43.1l-28.9,29.3,27.9-29.8,1-42.7Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st26">
+                <g class="st18">
+                  <g class="st42">
+                    <path class="st8" d="M421,163.9v43.1l28.9,29.3-27.9-29.8-1-42.7Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st27">
+                <g class="st45">
+                  <g class="st49">
+                    <path class="st21" d="M392.1,236.3s-2.4.3-1.6-1.1c.8-1.4,30.6-66.4,30.6-66.4v-4.9l-42.6,86.1,13.7-13.7Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st23">
+                <g class="st47">
+                  <g class="st43">
+                    <path class="st9" d="M449.9,236.3c0-2.9-.4-5.7-1.2-8.5-.7-2.7-27.7-59-27.7-59v-4.9l42.6,86.1-13.7-13.7Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st22">
+                <g class="st51">
+                  <g class="st46">
+                    <path class="st21" d="M392,236.4s-4.2,3.4-4.8,2.1c-1.1-2.5,33.8-72.1,33.8-72.1v-2.5l-42.6,86.1,13.6-13.7Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st22">
+                <g class="st50">
+                  <g class="st44">
+                    <path class="st28" d="M452.7,239.2c0-2.8-.4-5.6-1.1-8.3-1.6-7.6-30.6-64.5-30.6-64.5v-2.5l42.6,86.1-10.9-10.9Z"/>
+                  </g>
+                </g>
+              </g>
+              <path class="st2" d="M325.1,330.4l37.3-21.7,16-58.6-53.2,80.3Z"/>
+            </g>
+          </g>
+          <g class="st48">
+            <path class="st3" d="M342.3,225.1l-54.7,79.3,73.6,50.8,54.7-79.3-73.6-50.8Z"/>
+          </g>
+          <g class="st54">
+            <path class="st8" d="M325.1,330.4l95.9-6.4-58.6-15.3-37.3,21.7Z"/>
+          </g>
+          <g class="st53">
+            <path class="st5" d="M417.7,297.7l-95.2,12,4.1,32.4,95.2-12-4.1-32.4Z"/>
+          </g>
+          <g class="st52">
+            <g>
+              <g class="st24">
+                <g class="st58">
+                  <g class="st57">
+                    <path class="st21" d="M325.1,330.4l37.3-21.7,39.9,10.3-39.8-9.2-37.4,20.6Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st23">
+                <g class="st56">
+                  <g class="st64">
+                    <path class="st66" d="M402.3,319s1.5,1.9-.1,2c-1.6,0-72.7,6.9-72.7,6.9l-4.3,2.5,95.9-6.4-18.7-5Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st22">
+                <g class="st65">
+                  <g class="st62">
+                    <path class="st66" d="M402.4,319.1s5.1,1.9,4.2,3.1c-1.6,2.2-79.2,6.9-79.2,6.9l-2.2,1.3,95.9-6.5-18.6-4.8Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st25">
+                <g class="st63">
+                  <g class="st32">
+                    <path class="st8" d="M375.6,260.3s-11.7,43-16.2,47.3c-4.5,4.3-34.1,22.5-34.1,22.5l-.2.3,37.3-21.7,13.2-48.3Z"/>
+                  </g>
+                </g>
+              </g>
+              <path class="st2" d="M516.9,330.4l-37.3-21.7-16-58.6,53.2,80.3Z"/>
+            </g>
+          </g>
+          <g class="st30">
+            <path class="st7" d="M481.9,224.7l-56.4,78,73,52.9,56.4-78-73-52.9Z"/>
+          </g>
+          <g class="st41">
+            <path class="st8" d="M516.9,330.4l-95.9-6.4,58.6-15.3,37.3,21.7Z"/>
+          </g>
+          <g class="st34">
+            <path class="st6" d="M421.5,305.9l-.7,24.4,96.5,2.9.7-24.4-96.5-2.9Z"/>
+          </g>
+          <g class="st33">
+            <g>
+              <g class="st24">
+                <g class="st31">
+                  <g class="st55">
+                    <path class="st21" d="M516.9,330.4l-37.3-21.7-39.9,10.3,39.8-9.2,37.4,20.6Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st23">
+                <g class="st61">
+                  <g class="st60">
+                    <path class="st66" d="M439.8,319s-1.5,1.9.2,2c1.6,0,72.7,6.9,72.7,6.9l4.3,2.5-95.9-6.4,18.8-5Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st22">
+                <g class="st59">
+                  <g class="st37">
+                    <path class="st66" d="M439.6,319.1s-5.1,1.9-4.2,3.1c1.6,2.2,79.2,6.9,79.2,6.9l2.2,1.3-95.9-6.5,18.6-4.8Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st24">
+                <g class="st29">
+                  <g class="st40">
+                    <path class="st8" d="M375.6,260.3s-11.9,44.3-14.7,47.6c-3.8,4.5-27.6,17.7-27.6,17.7h0c0,0,29.3-16.9,29.3-16.9l13.1-48.4Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st25">
+                <g class="st36">
+                  <g class="st35">
+                    <path class="st8" d="M466.4,260.3s11.7,43,16.2,47.3,34.1,22.5,34.1,22.5l.2.3-37.4-21.6-13.1-48.4Z"/>
+                  </g>
+                </g>
+              </g>
+              <g class="st24">
+                <g class="st39">
+                  <g class="st38">
+                    <path class="st8" d="M466.4,260.3s11.9,44.3,14.7,47.6c3.8,4.5,27.6,17.7,27.6,17.7h0c0,0-29.3-16.9-29.3-16.9l-13.1-48.4Z"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
