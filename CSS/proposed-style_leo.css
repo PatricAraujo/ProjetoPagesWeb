@@ -1,0 +1,566 @@
+/* -----------------------------------FONTS----------------------------------- */
+/* montserrat-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../CSS/fonts/montserrat-v31-latin_latin-ext-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-regular - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-600 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-700 - latin_latin-ext */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../CSS/fonts/quicksand-v37-latin_latin-ext-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: #1A0B3E;
+}
+
+
+/* -----------------------------------NAV BAR----------------------------------- */
+/* Fixar o nav bar ao topo */
+nav {
+    background-color: #F4F1FA;
+    border-bottom: 1px #E4DFF0 solid;
+}
+
+
+/* Tipo de letra */
+
+
+/* definições do tipo de letra do navbar */
+.navbar a {
+    color: #1A0B3E;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #92127B;
+}
+
+/* -----------------------------------LINKS----------------------------------- */
+
+/* cor dos links por default */
+body a {
+    color: #0B7BC0;
+}
+
+/* cor dos links ao passar o rato por cima*/
+body a:hover {
+    color: #92127B;
+}
+
+.otros-polos {
+    background-color: #E4DFF0;
+}
+
+
+/* -----------------------------------ICONS----------------------------------- */
+
+/* cor dos icons de morada */
+.bi-geo-alt, .bi-globe2 {
+    color: #382068;
+    padding: 5px;
+    -webkit-text-stroke: 0.4px currentColor;
+}
+
+/* cor dos icons de telefone */
+.bi-telephone-outbound {
+    color: #7850B8;
+    padding: 5px;
+    -webkit-text-stroke: 0.4px currentColor;
+
+}
+
+/* cor dos icons de email */
+.bi-envelope-at {
+    color: #92127B;
+    padding: 5px;
+    -webkit-text-stroke: 0.4px currentColor;
+}
+
+
+/* -----------------------------------DESTAQUE----------------------------------- */
+/* background gradiente com cores da marca e texto branco */
+.destaque {
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    background: linear-gradient(120deg, #382068 0%, #6A1B7E 70%, #B0107F 100%);
+    color: white;
+}
+
+/* cor dos headings dentro do destaque gradiente */
+.destaque h1,
+.destaque h2,
+.destaque h3,
+.destaque h4,
+.destaque h5,
+.destaque h6 {
+    color: white;
+}
+
+/* cor dos links dentro do destaque gradiente */
+.destaque a {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* cor dos links quando se faz hover dentro do destaque gradiente */
+.destaque .polo-info a:hover {
+    color: #B9B3CC;
+    text-decoration: 0.7px underline #B9B3CC;
+}
+
+/* background gradiente com cores da marca e texto branco */
+.destaque .polo-info a {
+    color: #fff;
+    border-bottom: 0;
+}
+
+.lisboa-descricao {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.destaque .btn-destaque {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.80);
+    color: #392069;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.destaque .btn-destaque:hover {
+    background: rgb(244, 241, 250, 0.80);
+    color: #382068;
+    text-decoration: none;
+}
+
+.social-media .bi {
+    color: #ffffff;
+}
+
+/* tamanho de todos os icons */
+.bi {
+    font-size: 1.25rem;
+}
+
+.polos .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 15px;
+}
+
+.polos-div {
+    width: 100%;
+    height: 2.25px;
+    /* background: #E8008A; */
+    background: linear-gradient(120deg, #382068 0%, #6A1B7E 70%, #B0107F 100%);
+    border-radius: 2px;
+    margin: 0.4rem 0 1.1rem;
+}
+
+.polos-dados {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+}
+
+.icons {
+    flex: 0 0 32px;
+    height: 32px;
+    border-radius: 40%;
+    background: #F4F1FA;
+    /* color: #92127B; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-print {
+    font-size: 75%;
+    letter-spacing: 1px;
+    margin: 0 0 1px;
+    opacity: 70%;
+}
+
+.polo-info {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.polo-info a {
+    font-weight: 400;
+    color: #382068;
+    text-decoration: none;
+    border-bottom: 1px solid #3820684d transparent;
+}
+
+.polo-info a:hover {
+    border-bottom-color: #E8008A;
+}
+
+.direcoes {
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid rgba(56, 32, 104, 0.18);
+}
+
+
+/* -----------------------------------Buttons----------------------------------- */
+
+.btn-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 2.5rem;
+    border: 2px solid #382068;
+    border-radius: 15px;
+    color: #382068;
+    background: transparent;
+    text-decoration: none;
+}
+
+.btn-card:hover {
+    background: #E8008A;
+    border-color: #E8008A;
+    color: #fff;
+}
+
+
+/* botão pesquisa no nav bar */
+.btn-search {
+    position: absolute;
+    right: 4px;
+    /* Faz que fique dentro da barra de pesquisa*/
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8008A;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Icone search dentro de um botão */
+button .bi-search {
+    color: white;
+}
+
+/* Usei para as imagens nos contactos */
+.img-zoom {
+    overflow: hidden;
+    /* corta o que passar da caixa */
+}
+
+/* cards tipo cada polo na página Contactos */
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    display: block;
+    height: 36px;
+}
+
+
+
+.barra-pesquisa {
+    border: 1px #E4DFF0 solid;
+    border-radius: 50%;
+}
+
+.accordion {
+    --bs-accordion-border-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Cada item */
+.accordion-item {
+    background: #fff;
+    border: 1px solid #E4DFF0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.accordion-item[open] {
+    box-shadow: 0 2px 8px rgba(26, 11, 62, 0.1);
+}
+
+/* Itens aninhados (perguntas dentro da categoria) */
+.accordion-item .accordion-item,
+.accordion-item .accordion-item[open] {
+    border: none;
+    border-bottom: 2px solid #E4DFF0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Pergunta */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 16px 20px;
+    font-weight: 500;
+    color: #1A0B3E;
+    background: #fff;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background: #F4F1FA;
+}
+
+/* Item aberto (só o cabeçalho direto) */
+.accordion-item[open]>.accordion-header {
+    color: #92127B;
+    background: #F4F1FA;
+    box-shadow: inset 0 -1px 0 #E4DFF0;
+}
+
+.accordion-header:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #0aa7eb66;
+}
+
+/* Seta */
+.accordion-icon {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.accordion-item[open]>.accordion-header>.accordion-icon {
+    transform: rotate(180deg);
+}
+
+/* Resposta */
+.accordion-body {
+    padding: 16px 20px 20px;
+    color: #1A0B3E;
+    line-height: 1.6;
+}
+
+.accordion-body ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    background-color: #1A0B3E;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/* Desktop: tudo na mesma linha */
+@media (min-width: 992px) {
+    #navbarNav {
+        flex-grow: 1;
+        width: auto;
+        max-width: none;
+    }
+
+    #navbarNav .drawer-body {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .barra-pesquisa {
+        flex-grow: 1;
+    }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: #F4F1FA;
+    }
+
+    .destaque a:hover {
+        color: #F4F1FA;
+        text-decoration-thickness: 2px;
+    }
+
+    .destaque a:focus-visible {
+        outline: 2px solid white;
+        outline-offset: 3px;
+    }
+
+
+    .etiqueta {
+        display: inline-block;
+        background: #fff;
+        color: #1A0B3E;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 4px 14px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Estilos específicos da página Parceiros (transferidos do HTML) */
+/* Logos visíveis de cada vez: 5 no ecrã grande, 3 em tablet, 2 no telemóvel */
+      #carouselMultiple {
+        --bs-carousel-items: 5;
+        --bs-carousel-items-gap: 1rem;
+      }
+      @media (max-width: 991.98px) {
+        #carouselMultiple { --bs-carousel-items: 3; }
+      }
+      @media (max-width: 575.98px) {
+        #carouselMultiple { --bs-carousel-items: 2; }
+      }
+
+      /* Cada logo numa caixa do mesmo tamanho */
+      .parceiro-btn { cursor: pointer; border-radius: 1.5rem; }
+      .parceiro-btn img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        padding: 1rem;
+        background: #fff;
+        border: 2px solid #e4dff0;
+        border-radius: 1.5rem;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+      .parceiro-btn:hover img { border-color: #e0038a; }
+      .parceiro-btn[aria-pressed="true"] img {
+        border-color: #e0038a;
+        box-shadow: 0 0 0 3px rgba(224, 3, 138, 0.3);
+      }
+      .parceiro-btn:focus-visible { outline: 3px solid #3f1f69; outline-offset: 2px; }
+
+      /* Campo sem informação */
+      .em-falta {
+        background: #fff3cd;
+        color: #b00020;
+        padding: 0 0.4em;
+        border-radius: 0.3em;
+        font-weight: 700;
+      }
+
+      /* Botão "todos os parceiros": mesmas cores do card (roxo → rosa) */
+      .btn-todos {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #3f1f69 0%, #e0038a 100%);
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .btn-todos:hover,
+      .btn-todos:focus-visible { color: #fff; filter: brightness(1.12); }
+
+/* Estilos específicos da página Parceiros que estavam inline.
+   Usam o elemento/ID/classe existente em vez de criar classes novas. */
+form[role="search"] {
+    max-width: 600px;
+}
+
+#polo-mapa {
+    min-height: 320px;
+}
+
+footer .logo {
+    height: 40px;
+}
